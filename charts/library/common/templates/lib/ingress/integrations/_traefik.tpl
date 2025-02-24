@@ -9,20 +9,27 @@
   {{- end -}}
 
   {{- $traefik := $objectData.integrations.traefik -}}
-
-  {{- $enabled := true -}}
-  {{- if and $traefik (hasKey $traefik "enabled") (kindIs "bool" $traefik.enabled) -}}
-    {{- $enabled = $traefik.enabled -}}
+  {{- $enabled := "false" -}}
+  {{- if and (hasKey $traefik "enabled") (kindIs "bool" $traefik.enabled) -}}
+    {{- $enabled = $traefik.enabled | toString -}}
   {{- end -}}
 
-  {{- if $enabled -}}
+  {{- if eq $enabled "true" -}}
     {{- include "tc.v1.common.lib.ingress.integration.traefik.validate" (dict "objectData" $objectData) -}}
     {{- $namespace := include "tc.v1.common.lib.metadata.namespace" (dict "rootCtx" $rootCtx "objectData" $objectData "caller" "Traefik Integration") -}}
 
     {{- $entrypoints := $traefik.entrypoints | default (list "websecure") -}}
     {{- $middlewares := list -}}
 
-    {{/* Add the user middlewares */}}
+    {{/* Add the user, common and chart middlewares */}}
+    {{- if $rootCtx.Values.global.traefik.commonMiddlewares -}}
+      {{- $middlewares = concat $middlewares $rootCtx.Values.global.traefik.commonMiddlewares -}}
+    {{- end -}}
+
+    {{- if $traefik.chartMiddlewares -}}
+      {{- $middlewares = concat $middlewares $traefik.chartMiddlewares -}}
+    {{- end -}}
+
     {{- if $traefik.middlewares -}}
       {{- $middlewares = concat $middlewares $traefik.middlewares -}}
     {{- end -}}
@@ -96,5 +103,10 @@
     {{- end -}}
   {{- end -}}
 
+  {{- if $traefik.chartMiddlewares -}}
+    {{- if not (kindIs "slice" $traefik.chartMiddlewares) -}}
+      {{- fail (printf "Ingress - Expected [integrations.traefik.chartMiddlewares] to be a [slice], but got [%s]" (kindOf $traefik.chartMiddlewares)) -}}
+    {{- end -}}
+  {{- end -}}
 
 {{- end -}}

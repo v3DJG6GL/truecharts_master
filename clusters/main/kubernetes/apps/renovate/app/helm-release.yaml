@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: renovate
-      version: 1.11.1
+      version: 1.13.0
       sourceRef:
         kind: HelmRepository
         name: truecharts
@@ -31,71 +31,28 @@ spec:
   values:
     workload:
       main:
-        schedule: "@hourly"
         podSpec:
           containers:
             main:
-
               env:
-                GITHUB_COM_TOKEN: '${GITHUB_PAT}'
+                GITHUB_COM_TOKEN: '${GITHUB_PAT_TC}'
                 # You can set RENOVATE_AUTODISCOVER to true to run Renovate on all repos you have push access to
                 RENOVATE_AUTODISCOVER: 'false'
-                RENOVATE_TOKEN: '${GITHUB_PAT}'
-                RENOVATE_CONFIG_FILE: /tmp/renovate/config.json
-                LOGLEVEL: debug
+                RENOVATE_TOKEN: '${GITHUB_PAT_TC}'
+                LOG_LEVEL: debug
+                RENOVATE_CACHE_DIR: /tmp/renovate/cache
 
     configmap:
       config:
+        enabled: false
+    podOptions:
+        hostAliases:
+          - ip: 192.168.10.201
+            hostnames:
+            - dockerhub.kjeldschouten.nl
+    persistence:
+      configmap-vol:
         enabled: true
-        data:
-          config.json: |-
-            module.exports = {
-              "dryRun": null,
-              "username": "truecharts-admin",
-              "gitAuthor": "truecharts-admin <bot@truecharts.org>",
-              "onboarding": false,
-              "platform": "github",
-              "repositoryCache": "enabled",
-              // https://github.com/renovatebot/renovate/blob/main/lib/util/cache/package/types.ts
-              // https://github.com/renovatebot/renovate/blob/main/lib/modules/datasource/docker/index.ts <--- See how each namespace is used
-              // https://docs.renovatebot.com/self-hosted-configuration/#cachettloverride
-              "cacheTtlOverride": {
-                "datasource-docker-hub-tags": minPerDay * 3,
-                "datasource-docker-digest": minPerDay * 3,
-              },
-              "dockerMaxPages": 10,
-              "lockFileMaintenance": { "enabled": true },
-              "repositories": [
-                "truecharts/public",
-                "truecharts/private",
-                "truecharts/.github"
-              ],
-              "allowPostUpgradeCommandTemplating": true,
-              "allowedPostUpgradeCommands": ["^.*"],
-              "hostRules": [
-                {
-                  "hostType": "docker",
-                  "matchHost": "docker.io",
-                  // TODO: Add login
-                  "abortIgnoreStatusCodes": [401, 404, 429],
-                  "abortOnError": false
-                }
-              ],
-              "packageRules": [
-                {
-                  "matchManagers": [
-                    "helm-requirements",
-                    "helm-values",
-                    "helmv3",
-                    "custom.regex"
-                  ],
-                  "matchDatasources": ["docker"],
-                  "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest"],
-                  "postUpgradeTasks": {
-                    "fileFilters": ["**/Chart.yaml"],
-                    "executionMode": "update",
-                    "commands": ["./charttool genmeta {{{replace 'digest|pin|pinDigest' 'patch' updateType}}} {{{packageFileDir}}} || true"]
-                  }
-                },
-              ],
-            };
+        type: configmap
+        objectName: renovate-config
+        expandObjectName: false

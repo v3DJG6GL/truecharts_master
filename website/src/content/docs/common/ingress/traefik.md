@@ -29,9 +29,9 @@ Enables or Disables the traefik integration
 | ---------- | -------------------------------------------- |
 | Key        | `ingress.$name.integrations.traefik.enabled` |
 | Type       | `bool`                                       |
-| Required   | ✅                                            |
+| Required   | ❌                                            |
 | Helm `tpl` | ❌                                            |
-| Default    | `true`                                       |
+| Default    | `false`                                      |
 
 Example
 
@@ -201,6 +201,32 @@ ingress:
 
 ---
 
+## `chartMiddlewares`
+
+Same as [middlewares](#middlewares) but meant to be used by the chart developer
+to define some custom middleware specific to this ingress.
+
+|            |                                                       |
+| ---------- | ----------------------------------------------------- |
+| Key        | `ingress.$name.integrations.traefik.chartMiddlewares` |
+| Type       | `list` of `map`                                       |
+| Required   | ❌                                                     |
+| Helm `tpl` | ❌                                                     |
+| Default    | `[]`                                                  |
+
+Example
+
+```yaml
+ingress:
+  ingress-name:
+    integrations:
+      traefik:
+        chartMiddlewares:
+          - name: my-middleware
+```
+
+---
+
 ## Full Examples
 
 ```yaml
@@ -216,4 +242,6 @@ ingress:
           - name: my-middleware
             namespace: ""
             expandObjectName: false
+        chartMiddlewares:
+          - name: my-middleware
 ```
