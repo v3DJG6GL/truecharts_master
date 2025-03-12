@@ -1,6 +1,6 @@
 image:
   repository: docker.io/alexta69/metube
-  tag: 2025-02-20@sha256:1f3ecf1e433c8e228448b05dec7d2fa03f1db7b181299aef74a5a9b1661319dc
+  tag: 2025-03-07@sha256:e69e42b6d9084a67f4f3631a5ef3672f35cd5fcce28a4c0be6030ced282f9430
   pullPolicy: IfNotPresent
 service:
   main:

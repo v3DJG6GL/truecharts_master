@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/fluidd-core/fluidd
-  tag: v1.32.3@sha256:5fb822875240bcb9e4367d8b10c14330ca0aad194acd6dce8b4f1369aaf8e978
+  tag: v1.32.6@sha256:63322a9306c8c22442070cd3a5f0f7143ce1f50b28577204d82aba0d5cc164dd
   pullPolicy: IfNotPresent
 securityContext:
   container:
