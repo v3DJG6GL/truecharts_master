@@ -6,7 +6,7 @@ require (
     filippo.io/age v1.2.1
     github.com/Masterminds/semver/v3 v3.3.1
     github.com/beevik/ntp v1.4.3
-    github.com/budimanjojo/talhelper/v3 v3.0.20
+    github.com/budimanjojo/talhelper/v3 v3.0.21
     github.com/getsops/sops/v3 v3.9.4
     github.com/go-git/go-git/v5 v5.14.0
     github.com/go-logr/zerologr v1.2.3
@@ -22,10 +22,10 @@ require (
     github.com/spf13/cobra v1.9.1
     golang.org/x/crypto v0.36.0
     gopkg.in/yaml.v3 v3.0.1
-    helm.sh/helm/v3 v3.17.1
-    k8s.io/api v0.32.2
-    k8s.io/apimachinery v0.32.2
-    k8s.io/client-go v0.32.2
+    helm.sh/helm/v3 v3.17.2
+    k8s.io/api v0.32.3
+    k8s.io/apimachinery v0.32.3
+    k8s.io/client-go v0.32.3
     sigs.k8s.io/controller-runtime v0.20.3
     sigs.k8s.io/kustomize/api v0.19.0
     sigs.k8s.io/kustomize/kyaml v0.19.0

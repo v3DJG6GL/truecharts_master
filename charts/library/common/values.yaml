@@ -80,7 +80,7 @@ namespace: ""
 image:
   repository: ghcr.io/traefik/whoami
   pullPolicy: IfNotPresent
-  tag: v1.10.4@sha256:1699d99cb4b9acc17f74ca670b3d8d0b7ba27c948b3445f0593b58ebece92f04
+  tag: v1.11.0@sha256:200689790a0a0ea48ca45992e0450bc26ccab5307375b41c84dfc4f2475937ab
 
 chartContext:
   APPURL: ""
@@ -494,7 +494,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: tccr.io/tccr/code-server
-  tag: v4.97.2@sha256:1f828b329f554fb9cf5599f3f1cc5ddcbbc9d4fe06e4c90350be0bed724d12a3
+  tag: v4.98.2@sha256:6e8f93f7a051e9595306cd23a2fd981a4925e27f8ca02e3da16e3965b099bef3
   pullPolicy: IfNotPresent
 
 alpineImage:
