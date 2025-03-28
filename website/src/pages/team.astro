@@ -1,0 +1,202 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import CardGrid from "../components/CardGrid.astro";
+import MultiIcons from "../components/multi-icons/MultiIcons.astro";
+import { Card } from "@astrojs/starlight/components";
+import { Icon } from "@astrojs/starlight/components";
+import { AnimatedHeroValue } from "../components/CustomHero.astro";
+
+const listItemClass =
+  "flex flex-row items-center gap-0 space-y-0 hover:scale-110 duration-1000 group";
+const iconName = "approve-check-circle";
+const iconClass = "mr-2 group-hover:animate-ping";
+---
+
+<StarlightPage
+  frontmatter={{
+    title: "Meet the Team",
+    description: "Your Source for Awesome Helm-Charts!",
+    template: "splash",
+    banner: {
+      content:
+        '<a class="no-underline font-bold hover:underline" target="_blank" href="https://opencollective.com/truecharts">TrueCharts and OpenSource can only exist with your continued support</a>',
+    },
+    hero: {
+      tagline: "",
+      actions: []
+    },
+  }}
+>
+  <div class="text-center">
+    <div
+      class="text-4xl max-md:text-2xl max-sm:text-xl font-extrabold border-b-4 border-tc-primary inline-block mb-10"
+    >
+      Project Leads
+    </div>
+  </div>
+  <CardGrid stagger>
+    <Card title="Kjeld Schouten" icon="pencil">
+      <a
+        class="link-no-deco hover:scale-110 flex flex-row items-center gap-1 hover:border-b-4 border-tc-primary transition-all"
+        href="https://github.com/privatepuffin"
+        data-astro-prefetch="load"
+      >
+          <Icon
+            class="w-5 h-5 max-md:hidden max-lg:hidden text-[var(--sl-color-gray-2)]"
+            name="github"
+          />
+      </a>
+        <hr>
+        <b>Ops and R&D Lead</b><br>
+        <i> "MrPuffin"</i>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>CI-CD</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>R&D</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>(dev-)ops</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Technology implementation</p>
+        </li>
+      </ul>
+      <br>
+      <hr>
+
+            <a
+        class="link-no-deco hover:scale-110 flex flex-row items-center gap-1 hover:border-b-4 border-tc-primary transition-all"
+        href="https://github.com/privatepuffin/cluster"
+        data-astro-prefetch="load"
+      >
+      <b>-> Public Kubernetes Cluster</b>
+      </a>
+    </Card>
+    <Card title="Stavros Kois" icon="pencil">
+        <hr>
+        <b>Common Lead</b><br>
+        <i>"StavrosK"</i>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Common Code</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Common QA</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Test-Coverage</p>
+        </li>
+    </Card>
+    <Card title="Alfred Göppel" icon="pencil">
+        <hr>
+        <b>Community Development Lead</b><br>
+        <i>"Alfi0812"</i>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Maintain the Charts</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Maintain the Docs</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Review of community supplied code</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Implement Community Feedback</p>
+        </li>
+    </Card>
+    <Card title="Steven McElligott" icon="pencil">
+        <hr>
+        <b>Community Lead</b><br>
+        <i>"Jagrbombs"</i>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Head-moderator</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Community Feedback aggragation</p>
+        </li>
+    </Card>
+    <Card title="Anthony Scaffidi" icon="pencil">
+        <hr>
+        <b>Support Lead</b><br>
+        <i>"kqmaverick"</i>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Coordinating support livechats</p>
+        </li>
+        <li class={listItemClass}>
+          <Icon name={iconName} class={iconClass} />
+          <p>Ensuring reoccuring issues get added to the docs</p>
+        </li>
+    </Card>
+
+  </CardGrid>
+
+  <div class="text-center">
+    <div
+      class="text-4xl max-md:text-2xl max-sm:text-xl font-extrabold border-b-4 border-tc-primary inline-block mb-10"
+    >
+      Support Volunteers - Work-In-Progress
+    </div>
+  </div>
+  <CardGrid stagger>
+    <Card title="Xstar97TheNoob" icon="pencil">
+      TBD
+    </Card>
+    <Card title="Kenny.ch" icon="pencil">
+      TBD
+    </Card>
+    <Card title="tuxsudo" icon="pencil">
+      TBD
+    </Card>
+    <Card title="bakayuki" icon="pencil">
+      TBD
+    </Card>
+    <Card title="maverickd1" icon="pencil">
+      TBD
+    </Card>
+    <Card title="zasx" icon="pencil">
+      TBD
+    </Card>
+    <Card title="nightshaman" icon="pencil">
+      TBD
+    </Card>
+  </CardGrid>
+
+  <div class="text-center">
+    <div
+      class="text-4xl max-md:text-2xl max-sm:text-xl font-extrabold border-b-4 border-tc-primary inline-block mb-10"
+    >
+      Moderators - Work-In-Progress
+    </div>
+  </div>
+  <CardGrid stagger>
+    <Card title="Six-Shooter" icon="pencil">
+      - Minecraft server co-host
+    </Card>
+    <Card title="shadofall" icon="pencil">
+      TBD
+    </Card>
+    <Card title="HeavyBullets" icon="pencil">
+      - Previously TrueNAS Migration Lead
+      - Former Developer of Heavyscript
+    </Card>
+    <Card title="kofeyh" icon="pencil">
+      - Former Support Lead
+    </Card>
+
+  </CardGrid>
+
+</StarlightPage>

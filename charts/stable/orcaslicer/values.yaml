@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/orcaslicer
   pullPolicy: IfNotPresent
-  tag: 2.2.0@sha256:98f73aea748c2f82f45ae337505aced6f21e7e737794c06da794dd8b8c000ca1
+  tag: 2.3.0@sha256:c23b5fd9d62eece24ceef841b20a635f951c438e33c247e103860658457e240a
 securityContext:
   container:
     readOnlyRootFilesystem: false
