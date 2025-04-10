@@ -1,43 +1,43 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/firefox
-  tag: 2.9.0@sha256:ef73f05b7d3452fe3c8c7e865595360bd63c0af908e73743ebe74b072b14a65c
+  tag: 3.0.3@sha256:9b5d3e04af1024a44c2aa8938c78f155d64b0ab9459feb424c34b461155a3f98
 braveImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/brave
-  tag: 2.9.0@sha256:d113770cab86f0458059b4de6db081bae0e6936011aa86c09e61dc6d050c505f
+  tag: 3.0.3@sha256:d127091ce5bdfe613d6c2c196822181e78f772aa9c3847aba6d9c1490b2cfaf5
 chromeImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/google-chrome
-  tag: 2.9.0@sha256:09ff3462f5df02d7fcb678478ba4afbcf80d1b0189f74e5c640c8b43629358ab
+  tag: 3.0.3@sha256:7218f0974f7009ded4e4684229d5fe7e9eda1d97b113af94c8e461e427323380
 chromiumImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/chromium
-  tag: 2.9.0@sha256:ddf5e45420ee38f5e5be7931d48abd003a2eb96a343a62923ed7abd8107ff2d8
+  tag: 3.0.3@sha256:1fc9fef4dbec94cd182fe359012606ae809c0e6f22de844a87d1c479cdd7ccf1
 edgeImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/microsoft-edge
-  tag: 2.9.0@sha256:e84e914cef4c46deb11a26a68e893e65e6a893425a547964278160e6794e3a6f
+  tag: 3.0.3@sha256:7d395c105f924e7370515a5b92213fc10af86e453c5343c84a60b96af5839888
 remminaImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/remmina
-  tag: 2.9.0@sha256:0a28fe715bc2b470865eab27beb796725aaa22b0bb203abb8980c9b97aa80fb0
+  tag: 3.0.3@sha256:19a0ac7a432672346aec8803bf10de6b1051cd48f86b1e16305a7f3bfe0d5809
 torImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/tor-browser
-  tag: 2.9.0@sha256:d412fa58e0a066b59de2668ac13e82019a975ecedc7fb9405b64dd0f1bc9a465
+  tag: 3.0.3@sha256:e12a6f5bc3ddfc9ac94be52507e3af223de78756e8d6210372cbf7f7d6712ecd
 vivaldiImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/vivaldi
-  tag: 2.9.0@sha256:9be91b147fa940a73001308eb4ae668edc7e3d0363ced513ab55041b3244276a
+  tag: 3.0.3@sha256:7738ebfc7f65095b48910c6e412820b690fdbd989120abef97b99351b8f223c0
 vlcImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/vlc
-  tag: 2.9.0@sha256:402affce87b105aef08f816da5fcb9c73858001b21fcbf04c82835ea4dea74a8
+  tag: 3.0.3@sha256:c9c825028d5e0b3470795ceadbb1ba453af628ef46cf7d98f95dd032c7587104
 xfceImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/xfce
-  tag: 2.9.0@sha256:cce8ee6d981ba705184bbe985c5ab5ca081841491a290efec16785f0697b288a
+  tag: 3.0.3@sha256:f2344d3cce04607e6baa57699dc5cc343a0d7e437da7d231303ac27128eb7495
 
 securityContext:
   container:
