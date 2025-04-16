@@ -63,12 +63,7 @@ global:
     cnpg:
       pgVersion: 16
       skipEmptyWalArchiveCheck: true
-  metallb:
-    # -- Adds metalLB annotations to services
-    addServiceAnnotations: true
   traefik:
-    # -- Adds traefik annotations to services (when needed)
-    addServiceAnnotations: true
     commonMiddlewares:
       - name: tc-basic-secure-headers
   # -- Minimum nodePort value
@@ -203,6 +198,20 @@ diagnosticMode:
 # -- (docs/service/README.md)
 service:
   main:
+    ##  Integration stuff
+    # integration:
+    #   metallb:
+    #     enabled: false
+    ## Optional to set shared key manually, otherwise set to namespace
+    #     sharedKey: ""
+    #
+    #   cilium:
+    #     enabled: false
+    ## Optional to set shared key manually, otherwise ignored (namespace sharing)
+    #     sharedKey: ""
+    #
+    #   traefik:
+    #     enabled: false
     enabled: true
     primary: true
     ports:
@@ -485,7 +494,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: tccr.io/tccr/code-server
-  tag: v4.99.1@sha256:d9f29d95e2170bb79b6f1543a9b30e689e046cd738f3dcdd229ae6d4efcaf781
+  tag: v4.99.2@sha256:28edfdd27fbdc16aab6a4545806288afc2b7365e61b7303c73b207a181dce3f0
   pullPolicy: IfNotPresent
 
 alpineImage:
