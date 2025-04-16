@@ -1,31 +1,31 @@
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/firefox
-  tag: 3.0.3@sha256:9b5d3e04af1024a44c2aa8938c78f155d64b0ab9459feb424c34b461155a3f98
+  tag: 3.0.4@sha256:c295df7dd047f5470d87ec83f7c2e29da238027d9f980042a48a228018779ba9
 braveImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/brave
-  tag: 3.0.3@sha256:d127091ce5bdfe613d6c2c196822181e78f772aa9c3847aba6d9c1490b2cfaf5
+  tag: 3.0.4@sha256:c35813e2639a5e01ac219cbe0c5712e15d321f8d6ff1eb21d6966b4d55650e9b
 chromeImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/google-chrome
-  tag: 3.0.3@sha256:7218f0974f7009ded4e4684229d5fe7e9eda1d97b113af94c8e461e427323380
+  tag: 3.0.4@sha256:c2d5bc230774ceb9e17444571371aedcc955b981605beba378a2f6bc140d1fa6
 chromiumImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/chromium
-  tag: 3.0.3@sha256:1fc9fef4dbec94cd182fe359012606ae809c0e6f22de844a87d1c479cdd7ccf1
+  tag: 3.0.4@sha256:febd67a73b575df279ba2a070bd215949f5592bad10496149b360733f156d58c
 edgeImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/microsoft-edge
-  tag: 3.0.3@sha256:7d395c105f924e7370515a5b92213fc10af86e453c5343c84a60b96af5839888
+  tag: 3.0.4@sha256:78d28dd53551cb672a00bd05d90384393bc3c99572dd3e82ca04b3c76df99f33
 remminaImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/remmina
-  tag: 3.0.3@sha256:19a0ac7a432672346aec8803bf10de6b1051cd48f86b1e16305a7f3bfe0d5809
+  tag: 3.0.4@sha256:1a475979760bb0c51c48a12869f0ab545815b080583678bfa43babe390b3a216
 torImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/tor-browser
-  tag: 3.0.3@sha256:e12a6f5bc3ddfc9ac94be52507e3af223de78756e8d6210372cbf7f7d6712ecd
+  tag: 3.0.4@sha256:0436a6e01bbd02c8404e66e9882cf65a78fa1a80f9427de64bf9849d93d5b7f5
 vivaldiImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/vivaldi
@@ -33,11 +33,11 @@ vivaldiImage:
 vlcImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/vlc
-  tag: 3.0.3@sha256:c9c825028d5e0b3470795ceadbb1ba453af628ef46cf7d98f95dd032c7587104
+  tag: 3.0.4@sha256:313774edf0ae999353964e10ee3894a52019d01634e53f424f832c4c571f28d1
 xfceImage:
   pullPolicy: IfNotPresent
   repository: ghcr.io/m1k1o/neko/xfce
-  tag: 3.0.3@sha256:f2344d3cce04607e6baa57699dc5cc343a0d7e437da7d231303ac27128eb7495
+  tag: 3.0.4@sha256:761d0bab4e346f454cc1a135cc5b4e7261624a66191fa566ef2b6dd29cc13e65
 
 securityContext:
   container:
