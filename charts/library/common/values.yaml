@@ -195,6 +195,24 @@ TZ: UTC
 diagnosticMode:
   enabled: false
 
+# -- Vertical pod autoscaler
+vpa:
+  main:
+    enabled: false
+    targetSelector: []
+    # updatePolicy:
+    #   updateMode: auto
+    resourcePolicy:
+      containerPolicies:
+      - containerName: '*'
+        minAllowed:
+          cpu: 50m
+          memory: 50Mi
+        maxAllowed:
+          cpu: 8000m
+          memory: 20Gi
+        controlledResources: ["cpu", "memory"]
+
 # -- (docs/service/README.md)
 service:
   main:
@@ -450,6 +468,16 @@ notes:
     {{- end }}
     {{- end }}
 
+
+    {{- if .Values.chartContext.internalUrls }}
+    ## Connecting Internally
+
+    You can reach this chart inside your cluster, using the following service URLS:
+    {{- range $url := .Values.chartContext.internalUrls -}}
+    - {{ $url }}
+    {{- end }}
+    {{- end }}
+
     ## Sources for {{ .Chart.Name }}
 
     {{- range .Chart.Sources }}
@@ -494,7 +522,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: tccr.io/tccr/code-server
-  tag: v4.99.2@sha256:28edfdd27fbdc16aab6a4545806288afc2b7365e61b7303c73b207a181dce3f0
+  tag: v4.99.3@sha256:9f37dfc2c12bf87ae6540e1b2630cb4ea6957d31df23c9d0d546227aa74021a5
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -655,6 +683,21 @@ ingress:
         #     # Optional, by default will try to
         #     # "lookup" the namespace based on the name
         #     namespace: ""
+      nginx:
+        enabled: false
+        themepark:
+          enabled: false
+          css: ""
+        ipWhitelist: []
+        auth:
+          # empty to disable, options: "authentik" or "authelia"
+          type: ""
+          # Internal Domain name + port to reach the auth provider, excluding http(s)
+          internalHost: ""
+          # External (ingress) Domain name to reach the auth provider, excluding http(s)
+          externalHost: ""
+          # Optional: override default response headers
+          responseHeaders: []
       homepage:
         enabled: false
         # Default: chart name

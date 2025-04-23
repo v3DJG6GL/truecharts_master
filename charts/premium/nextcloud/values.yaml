@@ -1,11 +1,11 @@
 image:
   repository: tccr.io/tccr/nextcloud-fpm
   pullPolicy: IfNotPresent
-  tag: v31.0.2@sha256:3584bcd91132a1a969341269b0568ac3899a7e0f9869cc08804965582fe38918
+  tag: v31.0.4@sha256:08550422ed0bc7ce57f2d018293c31062ee6a93cb42ab9ba9f97ac74e03dd9e0
 nginxImage:
   repository: docker.io/nginxinc/nginx-unprivileged
   pullPolicy: IfNotPresent
-  tag: 1.27.4@sha256:218e25d58d22541b93613a61a04bf6e7d0e337b3384b6f890e83b9a1027480d1
+  tag: 1.27.4@sha256:663d1f83b634d625f3c36b323b21cc5c2c4ed5ebf912a01bfe13cce2f455e92e
 imaginaryImage:
   repository: tccr.io/tccr/nextcloud-imaginary
   pullPolicy: IfNotPresent
@@ -17,7 +17,7 @@ hpbImage:
 clamavImage:
   repository: docker.io/clamav/clamav
   pullPolicy: IfNotPresent
-  tag: 1.4.2@sha256:3a9d6b0babf3970603d0dd707f4dff5f6f547cd88c79423258a58af966d5df1d
+  tag: 1.4.2@sha256:02207c5756abe3a4e0c98c67545eb42b11a165d65d435b26894f2e640eb94196
 collaboraImage:
   repository: docker.io/collabora/code
   pullPolicy: IfNotPresent
@@ -141,6 +141,13 @@ workload:
         main:
           enabled: true
           primary: true
+          resources:
+            limits:
+              cpu: 2000m
+              memory: 3000Mi
+            requests:
+              cpu: 200m
+              memory: 500Mi
           envFrom:
             - configMapRef:
                 name: nextcloud-config
@@ -303,6 +310,12 @@ workload:
           enabled: true
           imageSelector: collaboraImage
           resources:
+            limits:
+              cpu: 2000m
+              memory: 3000Mi
+            requests:
+              cpu: 200m
+              memory: 500Mi
             excludeExtra: true
           securityContext:
             runAsUser: 1001
