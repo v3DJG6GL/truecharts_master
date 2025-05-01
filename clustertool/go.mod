@@ -8,7 +8,7 @@ require (
 	filippo.io/age v1.2.1
 	github.com/Masterminds/semver/v3 v3.3.1
 	github.com/beevik/ntp v1.4.3
-	github.com/budimanjojo/talhelper/v3 v3.0.21
+	github.com/budimanjojo/talhelper/v3 v3.0.22
 	github.com/getsops/sops/v3 v3.10.2
 	github.com/go-git/go-git/v5 v5.16.0
 	github.com/go-logr/zerologr v1.2.3
@@ -20,7 +20,7 @@ require (
 	github.com/knadh/koanf/v2 v2.2.0
 	github.com/leaanthony/debme v1.2.1
 	github.com/rs/zerolog v1.33.0
-	github.com/siderolabs/talos/pkg/machinery v1.10.0-beta.1
+	github.com/siderolabs/talos/pkg/machinery v1.10.0
 	github.com/spf13/cobra v1.9.1
 	golang.org/x/crypto v0.37.0
 	gopkg.in/yaml.v3 v3.0.1
