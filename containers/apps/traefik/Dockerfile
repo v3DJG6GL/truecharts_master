@@ -1,7 +1,7 @@
-FROM public.ecr.aws/docker/library/traefik:3.3.6@sha256:83f3c843133530e4aa45e6ddc415488583a8a01c88adc5022d415c6e97ceeaae
+FROM public.ecr.aws/docker/library/traefik:v3.4.0@sha256:4cf907247939b5d20bf4eff73abd21cb413c339600dde76dbc94a874b2578a27
 # Above line used by CI to find tags etc
 
-FROM public.ecr.aws/docker/library/alpine:3.21.3@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c as plugins
+FROM public.ecr.aws/docker/library/alpine:3.21.3 as plugins
 
 # FIXME: Find a way to keep versions up to date
 # -- Use the following prefixes to specify plugins to clone
@@ -35,7 +35,7 @@ RUN apk add --no-cache --update git
 COPY --chmod=777 ./containers/apps/traefik/clone-plugins.sh /clone-plugins.sh
 RUN /clone-plugins.sh
 
-FROM traefik:v3.3.6@sha256:83f3c843133530e4aa45e6ddc415488583a8a01c88adc5022d415c6e97ceeaae
+FROM traefik:v3.4.0@sha256:4cf907247939b5d20bf4eff73abd21cb413c339600dde76dbc94a874b2578a27
 # Copy the plugins from the previous stage
 COPY --from=plugins /plugins-local /plugins-local
 
