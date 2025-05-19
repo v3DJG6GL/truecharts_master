@@ -1,4 +1,4 @@
-FROM docker.io/codercom/code-server:4.99.4@sha256:316b7f60051b44b81fdf8972293735c2b0fda9a2b1e88fb6b77195df0c9b9b78
+FROM docker.io/codercom/code-server:4.100.2@sha256:0c31654f1125c3a685a42ed1f2946573f5ebaaf016c5bc0640c72f9f571267e0
 
 LABEL "org.opencontainers.image.source"="https://github.com/truecharts/containers"
 
