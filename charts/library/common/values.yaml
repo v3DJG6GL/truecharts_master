@@ -213,6 +213,44 @@ vpa:
           memory: 20Gi
         controlledResources: ["cpu", "memory"]
 
+# -- Horizontal pod autoscaler
+hpa:
+  main:
+    enabled: false
+    targetSelector: []
+    # minReplicas: 1
+    # maxReplicas: 3
+
+    # metrics:                 # Optional, list of metric specs
+    #   - type: Resource       # Can be Resource, Pods, Object, External, or ContainerResource
+    #     resource:
+    #       name: cpu
+    #       target:
+    #         type: Utilization        # Or Value / AverageValue
+    #         averageUtilization: 50
+
+    #   - type: Resource
+    #     resource:
+    #       name: memory
+    #       target:
+    #         type: AverageValue
+    #         averageValue: 500Mi
+
+    # behavior:                # Optional: controls scaling behavior
+    #   scaleUp:
+    #     stabilizationWindowSeconds: 0
+    #     policies:
+    #       - type: Percent
+    #         value: 100
+    #         periodSeconds: 15
+    #   scaleDown:
+    #     stabilizationWindowSeconds: 300
+    #     policies:
+    #       - type: Pods
+    #         value: 4
+    #         periodSeconds: 60
+
+
 # -- (docs/service/README.md)
 service:
   main:
@@ -522,7 +560,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: tccr.io/tccr/code-server
-  tag: v4.100.2@sha256:11fd44a70f9ef44604af58fe485db1f8c01c54e4e4ef7352678d09b55abd95e8
+  tag: v4.100.3@sha256:6eb0e4d3d2fbc1ef8f3e0fb15096eb90838efa5bc0f70e30ea685930bc714cbb
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -552,22 +590,22 @@ yqImage:
 
 postgresClientImage:
   repository: tccr.io/tccr/db-wait-postgres
-  tag: v1.1.0@sha256:e6a9566733a37899db799f38df79c1ebd28ed0062073ba5f43e7065a7725841a
+  tag: v1.1.0@sha256:15f27128ba0927c11ebc361d3997c4e48824bfde56cd1deacfc6660b2b234ffe
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
   repository: tccr.io/tccr/db-wait-mariadb
-  tag: v1.1.0@sha256:513e3d11ea19317f2d6b146329eaa05f76e24322734d81effb98a5fccea6ed0c
+  tag: v1.1.0@sha256:e2f91d35efd33d1fe179f452405bb9e673fb56c00ed08de079ee048120776c30
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: tccr.io/tccr/db-wait-redis
-  tag: v1.1.0@sha256:819717e8ef3aab4093ec8818e094a41e581d8dc7e237230a8be2254c1686df5b
+  tag: v1.1.0@sha256:13b78f5b48d130a21ee601549c883064588c6a639d778c7a60a6cb44a03c7e77
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
   repository: tccr.io/tccr/db-wait-mongodb
-  tag: v1.2.0@sha256:9a69802b7c48b4d390247b15c9798730a741054175b3e6534bda7d177b2ed454
+  tag: v1.2.0@sha256:53b6fafbea7e11139116220e8088fdd7f043689a1d31721631f728caf8127071
   pullPolicy: IfNotPresent
 
 postgres15Image:
