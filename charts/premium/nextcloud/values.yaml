@@ -1,11 +1,11 @@
 image:
   repository: tccr.io/tccr/nextcloud-fpm
   pullPolicy: IfNotPresent
-  tag: v31.0.6@sha256:520215232abd4b50822dbf592622ba098d81a8011f6859f40b20ee2c904d3576
+  tag: v31.0.6@sha256:19b30c3f14e0e6953db245815a0acd506547ba813dba2c524078195339b95dcb
 nginxImage:
   repository: docker.io/nginxinc/nginx-unprivileged
   pullPolicy: IfNotPresent
-  tag: 1.29.0@sha256:6cc82633c23919e0599558ad73b643f95b748f265e192140affb260771c4e778
+  tag: 1.29.0@sha256:5957d8d004517de8a53af6812bdb1b779d7c6746a611569af59b22660925f47b
 imaginaryImage:
   repository: tccr.io/tccr/nextcloud-imaginary
   pullPolicy: IfNotPresent
@@ -529,7 +529,6 @@ cnpg:
     database: nextcloud
 redis:
   enabled: true
-  includeCommon: true
   username: default
 
 ingressMiddlewares:
