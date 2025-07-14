@@ -1,11 +1,11 @@
 image:
   repository: ghcr.io/elfhosted/emby
   pullPolicy: IfNotPresent
-  tag: 4.9.1.6@sha256:631e611054085c46372c718ad67cf207a4c788bd079d8a9c1a81f3af9c0dc5bf
+  tag: 4.9.1.7@sha256:c17a9df505c9c0cfd5b1232b9b337e7aa7f05f41238f469c7a38a9e1790de8bc
 broadcastProxyImage:
   repository: docker.io/alpine/socat
   pullPolicy: IfNotPresent
-  tag: 1.8.0.3@sha256:b885de74f6dcb1be920863a20ca02452e292509d81ea89dfafa9cd69724df2e0
+  tag: 1.8.0.3@sha256:c257706a6d40239aec3141473ace89bfa1eb96745378361e60d3aaa913910375
 securityContext:
   container:
     readOnlyRootFilesystem: false
