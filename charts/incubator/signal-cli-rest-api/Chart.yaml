@@ -4,12 +4,12 @@ annotations:
     url: https://discord.com/invite/tVsPTHWTtr
   max_scale_version: 24.04.1
   min_scale_version: 24.04.0
-  truecharts.org/category: incubator
+  truecharts.org/category: media     ## NEEDS TO BE DEFINED
   truecharts.org/max_helm_version: "3.17"
   truecharts.org/min_helm_version: "3.14"
-  truecharts.org/train: stable
+  truecharts.org/train: incubator
 apiVersion: v2
-appVersion: 8.4.9
+appVersion: "0.93"
 dependencies:
   - name: common
     version: 28.13.0
@@ -19,20 +19,24 @@ dependencies:
     tags: []
     import-values: []
 deprecated: false
-description: Folding@home is a distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases.
-home: https://truecharts.org/charts/stable/foldingathome
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/foldingathome.webp
+description: Dockerized Signal Messenger REST API.
+home: https://truecharts.org/charts/incubator/signal-cli-rest-api
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/signal-cli-rest-api.webp
 keywords:
-  - foldingathome
+  - signal
+  - signal-cli
+  - api
+  - rest-api
 kubeVersion: '>=1.24.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
     url: https://truecharts.org
-name: foldingathome
+name: signal-cli-rest-api
 sources:
-  - https://ghcr.io/linuxserver/foldingathome
-  - https://github.com/truecharts/charts/tree/master/charts/stable/foldingathome
+  - https://github.com/bbernhard/signal-cli-rest-api
+  - https://github.com/truecharts/charts/tree/master/charts/incubator/signal-cli-rest-api
+  - https://hub.docker.com/r/bbernhard/signal-cli-rest-api/
 type: application
-version: 13.1.1
+version: 0.0.1
 

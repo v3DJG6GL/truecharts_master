@@ -7,9 +7,9 @@ annotations:
   truecharts.org/category: media
   truecharts.org/max_helm_version: "3.17"
   truecharts.org/min_helm_version: "3.14"
-  truecharts.org/train: stable
+  truecharts.org/train: incubator
 apiVersion: v2
-appVersion: 3.68.1
+appVersion: lastest
 dependencies:
   - name: common
     version: 28.13.0
@@ -19,26 +19,23 @@ dependencies:
     tags: []
     import-values: []
 deprecated: false
-description: A Helm chart for Kubernetes
-home: https://truecharts.org/charts/stable/filezilla
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/filezilla.webp
+description: Fetches upcoming airings/releases for TV shows and movies from Sonarr and Radarr calendars and posts them to Discord on a schedule.
+home: https://truecharts.org/charts/incubator/calendarr
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/calendarr.webp
 keywords:
-  - filezilla
-  - ftp
-  - sftp
-  - ftps
-  - client
+  - calendarr
+  - calendars
+  - discord
 kubeVersion: '>=1.24.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
     url: https://truecharts.org
-name: filezilla
+name: calendarr
 sources:
-  - https://filezilla-project.org/
-  - https://ghcr.io/linuxserver/filezilla
-  - https://github.com/linuxserver/docker-filezilla
-  - https://github.com/truecharts/charts/tree/master/charts/stable/filezilla
+  - https://github.com/jordanlambrecht/calendarr
+  - https://github.com/truecharts/charts/tree/master/charts/incubator/calendarr
+  - https://ghcr.io/jordanlambrecht/calendarr
 type: application
-version: 14.1.1
+version: 0.0.1
 
