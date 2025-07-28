@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/n8n-io/n8n
-  tag: 1.103.0@sha256:5da1d7ee272b47d6a6a8f20bbb0b2f8aed8af73fd7691df90908cd562c60f2cc
+  tag: 1.105.0@sha256:73e728289edda75024cf546b004f81a8aa3420450d0353a8c8e1ce134e9ea0fe
   pullPolicy: IfNotPresent
 timezoneandlocale: {}
 # N8N_DEFAULT_LOCALE: "en"
