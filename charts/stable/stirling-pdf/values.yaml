@@ -1,15 +1,21 @@
 image:
   repository: ghcr.io/stirling-tools/s-pdf
   pullPolicy: IfNotPresent
-  tag: 1.1.0-ultra-lite@sha256:e2eb4bd132138e50e1ba540a8e3e18c59c2721fee00d2ed42277338c158f51e9
+  tag: 1.2.0-ultra-lite@sha256:8b2ad404d7154e7d663017b213133393606cc2632c69e7f5de1eeed96b325a58
 fatImage:
   repository: ghcr.io/stirling-tools/s-pdf
   pullPolicy: IfNotPresent
-  tag: 1.1.0-fat@sha256:5a345c7397ff6c788056ba51aa82ea642f8b95cfb8a71e482598fe422c50a78d
+  tag: 1.2.0-fat@sha256:1a6b67d527eb85e35b0309094d62cbff28e9b862dab33de9781a6594992f9579
 fullImage:
   repository: ghcr.io/stirling-tools/s-pdf
   pullPolicy: IfNotPresent
-  tag: 1.1.0@sha256:55731f2b4f2a7988613df5fbe1137b439627bc25f42c6cc89e753572a04950d1
+  tag: 1.2.0@sha256:4b549915161efdf8a7c43bf0ad3b5d5d39f0cb0be58b7dcce1d1b62fbe8ed818
+securityContext:
+  container:
+    runAsNonRoot: false
+    readOnlyRootFilesystem: false
+    runAsUser: 0
+    runAsGroup: 0
 service:
   main:
     ports:

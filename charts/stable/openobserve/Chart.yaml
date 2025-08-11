@@ -7,34 +7,34 @@ annotations:
   truecharts.org/category: inventory
   truecharts.org/max_helm_version: "3.17"
   truecharts.org/min_helm_version: "3.14"
-  truecharts.org/train: incubator
+  truecharts.org/train: stable
 apiVersion: v2
-appVersion: 0.22.1
+appVersion: 0.14.7
 dependencies:
   - name: common
-    version: 28.15.0
+    version: 28.15.1
     repository: oci://tccr.io/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
 deprecated: false
-description: Keep track of your inventory of 3D-printer filament spools.
-home: https://truecharts.org/charts/incubator/spoolman
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/spoolman.webp
+description: Fast, scalable and cost-effective open source observability platform
+home: https://truecharts.org/charts/stable/openobserve
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/openobserve.webp
 keywords:
-  - spoolman
-  - inventory
-kubeVersion: '>=1.24.0-0'
+  - logs
+  - metrics
+  - traces
+  - observability
+kubeVersion: ">=1.24.0-0"
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
     url: https://truecharts.org
-name: spoolman
+name: openobserve
 sources:
-  - https://ghcr.io/donkie/spoolman
-  - https://github.com/Donkie/Spoolman
-  - https://github.com/truecharts/charts/tree/master/charts/incubator/spoolman
+  - https://github.com/openobserve/openobserve
+  - https://github.com/truecharts/charts/tree/master/charts/stable/openobserve
 type: application
-version: 0.1.0
-
+version: 1.0.0
