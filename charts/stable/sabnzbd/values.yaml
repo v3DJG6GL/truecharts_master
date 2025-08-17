@@ -82,3 +82,9 @@ metrics:
     targetSelector: metrics
     # Required for exportarr
     apiKey: ""
+
+resources:
+  limits:
+    memory: 3600Mi
+  requests:
+    memory: 300Mi
