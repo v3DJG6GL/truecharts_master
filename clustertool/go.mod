@@ -18,11 +18,11 @@ require (
 	github.com/knadh/koanf/v2 v2.2.2
 	github.com/leaanthony/debme v1.2.1
 	github.com/rs/zerolog v1.34.0
-	github.com/siderolabs/talos/pkg/machinery v1.11.0-beta.2
+	github.com/siderolabs/talos/pkg/machinery v1.11.0-rc.0
 	github.com/spf13/cobra v1.9.1
 	golang.org/x/crypto v0.41.0
 	gopkg.in/yaml.v3 v3.0.1
-	helm.sh/helm/v3 v3.18.5
+	helm.sh/helm/v3 v3.18.6
 	k8s.io/api v0.34.0-rc.1
 	k8s.io/apimachinery v0.34.0-rc.1
 	k8s.io/client-go v0.34.0-rc.1
