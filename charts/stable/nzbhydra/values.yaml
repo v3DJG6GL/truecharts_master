@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/home-operations/nzbhydra2
   pullPolicy: IfNotPresent
-  tag: 7.16.0@sha256:522c74f63efa6968895c2280e209fda31c6de4c92cfd84fa2c64702c7701f302
+  tag: 7.16.2@sha256:dbc159a93d49cd1bac45d519cdefe161cb61a2e24b1e277874d30eecd361f5a9
 service:
   main:
     ports:
