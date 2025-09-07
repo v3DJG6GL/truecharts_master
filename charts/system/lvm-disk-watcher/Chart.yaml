@@ -33,7 +33,7 @@ maintainers:
 name: lvm-disk-watcher
 sources:
   - https://github.com/lvm-disk-watcher/lvm-disk-watcher
-  - https://github.com/truecharts/charts/tree/master/charts/system/lvm-disk-watcher
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/system/lvm-disk-watcher
   - https://lvm-disk-watcher.universe.tf
 type: application
 version: 3.3.5

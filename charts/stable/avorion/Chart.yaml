@@ -33,7 +33,7 @@ maintainers:
 name: avorion
 sources:
   - https://ghcr.io/ich777/steamcmd
-  - https://github.com/truecharts/charts/tree/master/charts/stable/avorion
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/avorion
   - https://www.steampowered.com/
 type: application
 version: 9.3.5

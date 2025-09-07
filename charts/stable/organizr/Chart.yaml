@@ -32,7 +32,7 @@ maintainers:
 name: organizr
 sources:
   - https://github.com/causefx/Organizr
-  - https://github.com/truecharts/charts/tree/master/charts/stable/organizr
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/organizr
   - https://hub.docker.com/r/organizr/organizr
 type: application
 version: 21.3.5

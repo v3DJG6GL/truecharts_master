@@ -40,7 +40,7 @@ maintainers:
 name: kubernetes-dashboard
 sources:
   - https://github.com/kubernetes-dashboard/kubernetes-dashboard
-  - https://github.com/truecharts/charts/tree/master/charts/premium/kubernetes-dashboard
+  - https://github.com/trueforge/truecharts/tree/master/charts/premium/kubernetes-dashboard
   - https://hub.docker.com/r/kubernetesui/dashboard-api
   - https://hub.docker.com/r/kubernetesui/dashboard-auth
   - https://hub.docker.com/r/kubernetesui/dashboard-metrics-scraper

@@ -34,7 +34,7 @@ maintainers:
 name: ispy-agent-dvr
 sources:
   - https://github.com/doitandbedone/ispyagentdvr-docker
-  - https://github.com/truecharts/charts/tree/master/charts/stable/ispy-agent-dvr
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/ispy-agent-dvr
   - https://hub.docker.com/r/doitandbedone/ispyagentdvr
 type: application
 version: 13.4.8

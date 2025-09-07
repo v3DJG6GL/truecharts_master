@@ -34,7 +34,7 @@ name: timetagger
 sources:
   - https://ghcr.io/almarklein/timetagger
   - https://github.com/almarklein/timetagger
-  - https://github.com/truecharts/charts/tree/master/charts/stable/timetagger
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/timetagger
   - https://timetagger.app
 type: application
 version: 10.3.5

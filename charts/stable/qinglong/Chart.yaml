@@ -32,7 +32,7 @@ maintainers:
     url: https://truecharts.org
 name: qinglong
 sources:
-  - https://github.com/truecharts/charts/tree/master/charts/stable/qinglong
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/qinglong
   - https://hub.docker.com/r/whyour/qinglong
 type: application
 version: 12.3.5

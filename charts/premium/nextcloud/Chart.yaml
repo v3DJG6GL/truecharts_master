@@ -44,7 +44,7 @@ name: nextcloud
 sources:
   - https://github.com/nextcloud/docker
   - https://github.com/nextcloud/helm
-  - https://github.com/truecharts/charts/tree/master/charts/premium/nextcloud
+  - https://github.com/trueforge/truecharts/tree/master/charts/premium/nextcloud
   - https://hub.docker.com/r/clamav/clamav
   - https://hub.docker.com/r/collabora/code
   - https://hub.docker.com/r/nginxinc/nginx-unprivileged
