@@ -9,10 +9,10 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: system
 apiVersion: v2
-appVersion: 1.2.10
+appVersion: 1.2.11
 dependencies:
   - name: common
-    version: 28.16.5
+    version: 28.17.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,6 +35,7 @@ sources:
   - https://ghcr.io/postfinance/kubelet-csr-approver
   - https://github.com/kubelet-csr-approver/kubelet-csr-approver
   - https://github.com/truecharts/charts/tree/master/charts/system/kubelet-csr-approver
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/system/kubelet-csr-approver
 type: application
-version: 2.3.4
+version: 2.4.0
 

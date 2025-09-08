@@ -1,4 +1,4 @@
-module github.com/truecharts/public/clustertool
+module github.com/trueforge-org/truecharts/clustertool
 
 go 1.24.5
 
@@ -6,7 +6,7 @@ require (
 	filippo.io/age v1.2.1
 	github.com/Masterminds/semver/v3 v3.4.0
 	github.com/beevik/ntp v1.4.3
-	github.com/budimanjojo/talhelper/v3 v3.0.33
+	github.com/budimanjojo/talhelper/v3 v3.0.34
 	github.com/getsops/sops/v3 v3.10.2
 	github.com/go-git/go-git/v5 v5.16.2
 	github.com/go-logr/zerologr v1.2.3
@@ -90,7 +90,6 @@ require (
 	github.com/blang/semver v3.5.1+incompatible // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/buger/jsonparser v1.1.1 // indirect
-	github.com/carapace-sh/carapace-shlex v1.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chai2010/gettext-go v1.0.2 // indirect
@@ -238,9 +237,6 @@ require (
 	github.com/wk8/go-ordered-map/v2 v2.1.8 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/xanzy/ssh-agent v0.3.3 // indirect
-	github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb // indirect
-	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
-	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	github.com/xlab/treeprint v1.2.0 // indirect
 	github.com/zeebo/errs v1.4.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
@@ -287,6 +283,5 @@ require (
 	oras.land/oras-go/v2 v2.6.0 // indirect
 	sigs.k8s.io/json v0.0.0-20241014173422-cfa47c3a1cc8 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
-	sigs.k8s.io/structured-merge-diff/v4 v4.7.0 // indirect
 	sigs.k8s.io/structured-merge-diff/v6 v6.3.0 // indirect
 )
