@@ -9,10 +9,10 @@ annotations:
   truecharts.org/min_helm_version: "3.14"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 0.264.6
+appVersion: 0.264.7
 dependencies:
   - name: common
-    version: 28.17.1
+    version: 28.18.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -42,5 +42,5 @@ sources:
   - https://github.com/truecharts/charts/tree/master/charts/stable/nocodb
   - https://hub.docker.com/r/nocodb/nocodb
 type: application
-version: 17.10.3
+version: 17.11.0
 
