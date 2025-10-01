@@ -1,7 +1,7 @@
 image:
   repository: twinproduction/gatus
   pullPolicy: IfNotPresent
-  tag: v5.24.1@sha256:fcd3ba5a7d7db6c1c83780529cd69f249d1dff6deaffcdb6729ac804fe3d4444
+  tag: v5.25.1@sha256:64262b549a70caea3323a60db47d6957a7a7e41336f078202c2343784203b6c3
 
 service:
   main:

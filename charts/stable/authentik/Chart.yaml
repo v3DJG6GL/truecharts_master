@@ -6,20 +6,22 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: authentication
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2025.8.3
+appVersion: 2025.8.4
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.8.1
+    version: 17.9.1
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -45,7 +47,8 @@ sources:
   - https://ghcr.io/maxmind/geoipupdate
   - https://github.com/goauthentik/authentik
   - https://github.com/truecharts/charts/tree/master/charts/stable/authentik
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/authentik
   - https://goauthentik.io/docs/
 type: application
-version: 33.17.1
+version: 33.19.5
 

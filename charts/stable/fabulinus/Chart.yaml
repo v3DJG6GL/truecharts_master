@@ -6,13 +6,15 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: AI
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
 appVersion: latest-cpu
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,7 +36,8 @@ name: fabulinus
 sources:
   - https://github.com/titanml/takeoff-communitys
   - https://github.com/truecharts/charts/tree/master/charts/stable/fabulinus
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/fabulinus
   - https://hub.docker.com/r/tytn/fabulinus
 type: application
-version: 5.6.0
+version: 5.7.1
 

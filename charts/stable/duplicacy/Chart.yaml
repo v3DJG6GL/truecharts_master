@@ -6,13 +6,15 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: Backup
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
 appVersion: 1.7.2
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,7 +36,8 @@ name: duplicacy
 sources:
   - https://ghcr.io/hotio/duplicacy
   - https://github.com/truecharts/charts/tree/master/charts/stable/duplicacy
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/duplicacy
   - https://hotio.dev/containers/duplicacy
 type: application
-version: 9.6.0
+version: 9.7.1
 

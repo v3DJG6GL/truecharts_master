@@ -6,20 +6,22 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: Cloud
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
 appVersion: 4.8.0
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.8.1
+    version: 17.9.1
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -42,7 +44,8 @@ name: cloudreve
 sources:
   - https://github.com/cloudreve/Cloudreve
   - https://github.com/truecharts/charts/tree/master/charts/stable/cloudreve
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/cloudreve
   - https://hub.docker.com/r/cloudreve/cloudreve
 type: application
-version: 10.20.1
+version: 10.22.2
 

@@ -4,13 +4,15 @@ annotations:
     url: https://discord.com/invite/tVsPTHWTtr
   truecharts.org/category: networking
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
 appVersion: 0.11.1
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -33,6 +35,7 @@ name: nebula-sync
 sources:
   - https://ghcr.io/lovelaze/nebula-sync
   - https://github.com/truecharts/charts/tree/master/charts/stable/nebula-sync
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/nebula-sync
 type: application
-version: 0.6.0
+version: 0.7.1
 

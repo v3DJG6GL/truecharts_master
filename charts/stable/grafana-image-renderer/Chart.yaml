@@ -6,13 +6,15 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: Productivity
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
 appVersion: latest
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -34,7 +36,8 @@ name: grafana-image-renderer
 sources:
   - https://github.com/grafana/grafana-image-renderer/blob/master/docs/remote_rendering_using_docker.md
   - https://github.com/truecharts/charts/tree/master/charts/stable/grafana-image-renderer
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/grafana-image-renderer
   - https://hub.docker.com/r/grafana/grafana-image-renderer
 type: application
-version: 8.6.1
+version: 8.7.1
 

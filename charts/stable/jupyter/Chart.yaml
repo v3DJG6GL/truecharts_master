@@ -6,13 +6,15 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: Cloud
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
 appVersion: 2025.9.23
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -45,5 +47,5 @@ sources:
   - https://quay.io/jupyter/scipy-notebook
   - https://quay.io/jupyter/tensorflow-notebook
 type: application
-version: 12.30.12
+version: 12.31.1
 

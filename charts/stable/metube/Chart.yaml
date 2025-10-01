@@ -6,13 +6,15 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: media
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2025.09.06
+appVersion: 2025.09.28
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,6 +37,7 @@ sources:
   - https://ghcr.io/alexta69/metube
   - https://github.com/alexta69/metube
   - https://github.com/truecharts/charts/tree/master/charts/stable/metube
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/metube
 type: application
-version: 16.8.0
+version: 16.9.1
 

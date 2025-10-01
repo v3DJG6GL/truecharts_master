@@ -6,13 +6,15 @@ annotations:
   min_scale_version: 24.04.0
   truecharts.org/category: productivity
   truecharts.org/max_helm_version: "3.17"
+  truecharts.org/max_kubernetes_version: 1.32.0
   truecharts.org/min_helm_version: "3.14"
+  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
 appVersion: 2.16.31
 dependencies:
   - name: common
-    version: 28.20.0
+    version: 28.21.1
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,7 +37,8 @@ name: semaphore
 sources:
   - https://github.com/ansible-semaphore/semaphore
   - https://github.com/truecharts/charts/tree/master/charts/stable/semaphore
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/semaphore
   - https://hub.docker.com/r/semaphoreui/semaphore
 type: application
-version: 6.7.0
+version: 6.8.1
 
