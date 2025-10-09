@@ -14,7 +14,7 @@ apiVersion: v2
 appVersion: 2.1.1
 dependencies:
   - name: common
-    version: 28.21.1
+    version: 28.22.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -41,5 +41,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/teslamate
   - https://hub.docker.com/r/teslamate/teslamate
 type: application
-version: 5.8.1
+version: 5.9.0
 
