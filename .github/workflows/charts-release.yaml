@@ -195,9 +195,10 @@ jobs:
           mkdir -p website/src/assets || echo "assets path already exists, continuing..."
 
           ./temp/clustertool charts genchartlist ./charts
-          mv charts.json website/src/assets/charts.json
+          mv -f charts.json website/src/assets/charts.json
 
           echo "Copying changelogs to docs"
+          rm -rf ./website/src/content/docs/charts/
           mkdir -p ./website/src/content/docs/charts/
           mkdir -p ./changelogs
 
