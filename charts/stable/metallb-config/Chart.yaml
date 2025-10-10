@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A network load-balancer implementation for Kubernetes using standard routing protocols
-home: https://truecharts.org/charts/premium/metallb-config
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/metallb-config.webp
+home: https://trueforge.org/truecharts/stable/metallb-config
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/metallb-config.webp
 keywords:
   - metallb
   - loadbalancer
@@ -35,7 +35,7 @@ maintainers:
 name: metallb-config
 sources:
   - https://github.com/metallb/metallb
-  - https://github.com/trueforge-org/truecharts/tree/master/charts/premium/metallb-config
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/metallb-config
   - https://hub.docker.com/_/hello-world
   - https://metallb.io
 type: application

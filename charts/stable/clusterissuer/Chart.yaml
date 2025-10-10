@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Certificate management for Kubernetes
-home: https://truecharts.org/charts/premium/clusterissuer
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/clusterissuer.webp
+home: https://trueforge.org/truecharts/stable/clusterissuer
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/clusterissuer.webp
 keywords:
   - cert-manager
   - certificates
@@ -35,8 +35,8 @@ maintainers:
 name: clusterissuer
 sources:
   - https://cert-manager.io/
-  - https://github.com/trueforge-org/truecharts/tree/master/charts/premium/clusterissuer
-  - https://github.com/trueforge/truecharts/tree/master/charts/premium/clusterissuer
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/clusterissuer
+  - https://github.com/trueforge/truecharts/tree/master/charts/stable/clusterissuer
   - https://hub.docker.com/_/hello-world
 type: application
 version: 10.8.0

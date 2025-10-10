@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
-home: https://truecharts.org/charts/premium/grafana
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/grafana.webp
+home: https://trueforge.org/truecharts/stable/grafana
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/grafana.webp
 keywords:
   - analytics
   - monitoring
@@ -37,7 +37,7 @@ maintainers:
 name: grafana
 sources:
   - https://github.com/bitnami/bitnami-docker-grafana
-  - https://github.com/trueforge-org/truecharts/tree/master/charts/premium/grafana
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/grafana
   - https://grafana.com/
   - https://hub.docker.com/r/grafana/grafana
   - https://quay.io/kiwigrid/k8s-sidecar

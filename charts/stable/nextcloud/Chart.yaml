@@ -29,8 +29,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: A private cloud server that puts the control and security of your own data back into your hands.
-home: https://truecharts.org/charts/premium/nextcloud
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/nextcloud.webp
+home: https://trueforge.org/truecharts/stable/nextcloud
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/nextcloud.webp
 keywords:
   - nextcloud
   - storage
@@ -49,8 +49,8 @@ sources:
   - https://github.com/truecharts/containers/tree/master/apps/nextcloud-fpm
   - https://github.com/truecharts/containers/tree/master/apps/nextcloud-imaginary
   - https://github.com/truecharts/containers/tree/master/apps/nextcloud-push-notify
-  - https://github.com/trueforge-org/truecharts/tree/master/charts/premium/nextcloud
-  - https://github.com/trueforge/truecharts/tree/master/charts/premium/nextcloud
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/nextcloud
+  - https://github.com/trueforge/truecharts/tree/master/charts/stable/nextcloud
   - https://hub.docker.com/r/clamav/clamav
   - https://hub.docker.com/r/collabora/code
   - https://hub.docker.com/r/nginxinc/nginx-unprivileged

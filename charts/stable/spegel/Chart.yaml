@@ -22,8 +22,8 @@ dependencies:
     import-values: []
 deprecated: false
 description: Stateless cluster local OCI registry mirror.
-home: https://truecharts.org/charts/system/spegel
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/spegel.webp
+home: https://trueforge.org/truecharts/stable/spegel
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/spegel.webp
 keywords:
   - spegel
 kubeVersion: '>=1.24.0-0'
@@ -34,7 +34,7 @@ maintainers:
 name: spegel
 sources:
   - https://ghcr.io/spegel-org/spegel
-  - https://github.com/trueforge-org/truecharts/tree/master/charts/system/spegel
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/spegel
 type: application
 version: 4.9.0
 
