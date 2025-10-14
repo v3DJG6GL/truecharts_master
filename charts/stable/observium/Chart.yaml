@@ -14,14 +14,14 @@ apiVersion: v2
 appVersion: 20250519.0.0
 dependencies:
   - name: common
-    version: 28.22.0
+    version: 28.24.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mariadb
-    version: 17.6.0
+    version: 17.7.0
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
@@ -42,9 +42,10 @@ maintainers:
 name: observium
 sources:
   - https://github.com/pvrmza/docker-observium
+  - https://github.com/truecharts/charts/tree/master/charts/stable/observium
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/observium
   - https://hub.docker.com/r/pvrmza/docker-observium
   - https://www.observium.org/
 type: application
-version: 13.8.0
+version: 13.10.0
 

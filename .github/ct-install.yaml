@@ -7,8 +7,6 @@ chart-dirs:
   - charts/stable
   - charts/dependency
   - charts/dev
-  - charts/premium
-  - charts/system
 excluded-charts:
   - charts/dependency/subchart
   - charts/library/common

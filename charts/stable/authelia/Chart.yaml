@@ -11,17 +11,17 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 4.39.12
+appVersion: 4.39.13
 dependencies:
   - name: common
-    version: 28.22.0
+    version: 28.24.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.10.1
+    version: 17.11.1
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -53,7 +53,8 @@ sources:
   - https://ghcr.io/authelia/authelia
   - https://github.com/authelia/authelia
   - https://github.com/authelia/chartrepo
+  - https://github.com/truecharts/charts/tree/master/charts/stable/authelia
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/authelia
 type: application
-version: 29.17.1
+version: 29.19.1
 

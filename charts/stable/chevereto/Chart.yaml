@@ -14,14 +14,14 @@ apiVersion: v2
 appVersion: 1.6.2
 dependencies:
   - name: common
-    version: 28.22.0
+    version: 28.24.0
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mariadb
-    version: 17.6.0
+    version: 17.7.0
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
@@ -40,10 +40,11 @@ maintainers:
     url: https://truecharts.org
 name: chevereto
 sources:
-  - https://chevereto-free.github.io/setup/system/environment.html#image-handling-variables
+  - https://chevereto-free.github.io/setup/stable/environment.html#image-handling-variables
   - https://ghcr.io/rodber/chevereto-free
   - https://github.com/rodber/chevereto-free
+  - https://github.com/truecharts/charts/tree/master/charts/stable/chevereto
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/chevereto
 type: application
-version: 16.8.0
+version: 16.10.0
 
