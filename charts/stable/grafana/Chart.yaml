@@ -11,10 +11,10 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 12.2.0
+appVersion: 12.2.1
 dependencies:
   - name: common
-    version: 28.25.0
+    version: 28.26.3
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -36,12 +36,12 @@ maintainers:
     url: https://truecharts.org
 name: grafana
 sources:
+  - https://ghcr.io/kiwigrid/k8s-sidecar
   - https://github.com/bitnami/bitnami-docker-grafana
   - https://github.com/truecharts/charts/tree/master/charts/stable/grafana
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/grafana
   - https://grafana.com/
   - https://hub.docker.com/r/grafana/grafana
-  - https://quay.io/kiwigrid/k8s-sidecar
 type: application
-version: 19.12.0
+version: 20.0.2
 

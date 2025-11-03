@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/grav
   pullPolicy: IfNotPresent
-  tag: 1.7.49@sha256:6cccfd51b2e38812ee947ee99fb40db7fe4c345321217d965ff06cba7eecfb3c
+  tag: 1.7.50@sha256:f2b19f7a3320038b6e1d1cb9a1bdc3b1fbd63ea68791a91de0f9989078e616b0
 service:
   main:
     ports:

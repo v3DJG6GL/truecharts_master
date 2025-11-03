@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/dgtlmoon/changedetection.io
   pullPolicy: IfNotPresent
-  tag: 0.50.24@sha256:20a4501d304a397139176bf4fd9136011fff2d01044df3575a9e8f2ee35eb0bf
+  tag: 0.50.38@sha256:5896f6273a3ec1470aac264e19d4318ceb449685f29606df0711e7aed58bbca0
 
 service:
   main:

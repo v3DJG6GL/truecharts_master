@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: seaduboi/broadcast-box
-  tag: latest@sha256:05f7d3ae49ea58cadef1187350913e8711ed032a90cce7102083e0dd311acdd5
+  tag: latest@sha256:559f28d650d8a75ae17222c02a59a1a1e2c6f5827709bc64b267b31ad5260d4c
 service:
   main:
     ports:

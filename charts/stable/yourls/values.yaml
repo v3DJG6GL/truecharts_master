@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: yourls
-  tag: 1.10.2@sha256:4d352d48719d66fd799f557fc0ad36f780304f9aae6ac397b9d6ee98fcef23d9
+  tag: 1.10.2@sha256:fcfe56164dac60880d23594381c3dc488221a7deb3ee396f5c8d524a36a5e33a
 securityContext:
   container:
     readOnlyRootFilesystem: false

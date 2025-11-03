@@ -1,6 +1,6 @@
 image:
-  repository: quay.io/netdata/netdata
-  tag: v2.7.0@sha256:805b317084c0149b3b0e7c994df0ad5e0d222bd4086898326fae94fd61907e17
+  repository: ghcr.io/netdata/netdata
+  tag: v2.7.3@sha256:e70e34edf027dabf004544d2511a8a683b85527396aa12ba2eb2b0ff83e4b178
   pullPolicy: IfNotPresent
 # -- The service account the pods will use to interact with the Kubernetes API
 serviceAccount:

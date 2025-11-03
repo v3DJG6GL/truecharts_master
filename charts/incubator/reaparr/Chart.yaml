@@ -11,10 +11,10 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: incubator
 apiVersion: v2
-appVersion: 0.33.2
+appVersion: 0.34.0
 dependencies:
   - name: common
-    version: 28.25.0
+    version: 28.26.3
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -44,5 +44,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/incubator/reaparr
   - https://hub.docker.com/r/reaparr/reaparr
 type: application
-version: 0.2.0
+version: 0.4.2
 

@@ -1,7 +1,7 @@
 image:
   repository: docker.io/bitnamisecure/mariadb
   pullPolicy: IfNotPresent
-  tag: latest@sha256:a4e7a735755d7847a9bc639c2bfd0200dfdb60ea7a867b967fb5faee08187b31
+  tag: latest@sha256:2506362652a70d084934d5eb84fc7da47cccfa5e0daca4993e549404220c62f2
 workload:
   main:
     podSpec:

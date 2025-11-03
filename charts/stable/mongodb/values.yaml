@@ -1,7 +1,7 @@
 image:
   repository: docker.io/bitnamisecure/mongodb
   pullPolicy: IfNotPresent
-  tag: latest@sha256:3a822a270ebc55bc49cac61afebce3ede0c68eb9b08b1e9d4b2d57ad29f78997
+  tag: latest@sha256:d25fe32240373ef69b4952b3ed7bac67acbb4f9c91a1e355cfb7193ff20303a3
 
 workload:
   main:
