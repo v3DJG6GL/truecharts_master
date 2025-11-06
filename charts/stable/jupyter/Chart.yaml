@@ -11,7 +11,7 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2025.9.23
+appVersion: 7.4.7
 dependencies:
   - name: common
     version: 28.26.3
@@ -36,7 +36,6 @@ maintainers:
 name: jupyter
 sources:
   - https://github.com/jupyter/docker-stacks
-  - https://github.com/truecharts/charts/tree/master/charts/stable/jupyter
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/jupyter
   - https://quay.io/jupyter/all-spark-notebook
   - https://quay.io/jupyter/base-notebook
@@ -48,3 +47,4 @@ sources:
   - https://quay.io/jupyter/tensorflow-notebook
 type: application
 version: 12.35.2
+

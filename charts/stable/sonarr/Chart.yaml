@@ -35,11 +35,9 @@ maintainers:
     url: https://truecharts.org
 name: sonarr
 sources:
-  - https://ghcr.io/home-operations/sonarr
   - https://ghcr.io/onedr0p/exportarr
   - https://github.com/Sonarr/Sonarr
-  - https://github.com/truecharts/charts/tree/master/charts/stable/sonarr
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/sonarr
 type: application
-version: 24.12.4
+version: 25.0.0
 
