@@ -11,7 +11,7 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 3.8.0
+appVersion: 3.8.1
 dependencies:
   - name: common
     version: 28.26.3
@@ -21,14 +21,14 @@ dependencies:
     tags: []
     import-values: []
   - name: mariadb
-    version: 17.9.5
+    version: 17.9.6
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
     tags: []
     import-values: []
   - name: redis
-    version: 17.13.5
+    version: 17.13.6
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
     alias: ""
@@ -52,5 +52,5 @@ sources:
   - https://github.com/CTFd/CTFd
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/ctfd
 type: application
-version: 9.19.10
+version: 9.19.13
 
