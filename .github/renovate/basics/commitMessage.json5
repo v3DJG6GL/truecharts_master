@@ -2,47 +2,48 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "commitMessageTopic": "{{depName}}",
   "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-  "prefix": "chore(deps)",
+  "semanticCommitType": "chore",
+  "semanticCommitScope": "deps",
   "packageRules": [
     {
       "matchManagers": ["helm-values"],
       "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "helm"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "helm"
     },
     {
       "matchManagers": ["helm-values"],
       "updateTypes": ["digest", "pin"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "helm"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "helm"
     },
     {
       "matchManagers": ["docker"],
       "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "container"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "container"
     },
     {
       "matchManagers": ["docker"],
       "updateTypes": ["digest", "pin", "pinDigest"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "container"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "container"
     },
     {
       "matchManagers": ["flux"],
       "matchPackagePatterns": ["!(.*/.*)"],
       "commitMessageTopic": "chart {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "flux"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "flux"
     },
     {
       "matchManagers": ["flux"],
@@ -50,8 +51,8 @@
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "flux"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "flux"
     },
     {
       "matchManagers": ["flux"],
@@ -59,15 +60,15 @@
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "flux"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "flux"
     },
     {
       "matchManagers": ["helmv3"],
       "commitMessageTopic": "chart {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      semanticCommitType: "chore",
-      semanticCommitScope: "helm"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "helm"
     },
     {
       "matchPaths": ["clustertool/**"],
