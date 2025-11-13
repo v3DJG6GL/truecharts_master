@@ -9,35 +9,40 @@
       "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "prefix": "chore(helm)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "helm"
     },
     {
       "matchManagers": ["helm-values"],
       "updateTypes": ["digest", "pin"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      "prefix": "chore(helm)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "helm"
     },
     {
       "matchManagers": ["docker"],
       "updateTypes": ["major", "minor", "patch"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "prefix": "chore(container)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "container"
     },
     {
       "matchManagers": ["docker"],
       "updateTypes": ["digest", "pin", "pinDigest"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      "prefix": "chore(container)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "container"
     },
     {
       "matchManagers": ["flux"],
       "matchPackagePatterns": ["!(.*/.*)"],
       "commitMessageTopic": "chart {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "prefix": "chore(flux)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "flux"
     },
     {
       "matchManagers": ["flux"],
@@ -45,7 +50,8 @@
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "prefix": "chore(flux)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "flux"
     },
     {
       "matchManagers": ["flux"],
@@ -53,13 +59,15 @@
       "matchPackagePatterns": [".*/.*"],
       "commitMessageTopic": "image {{depName}}",
       "commitMessageExtra": "digest to {{newDigestShort}}",
-      "prefix": "chore(flux)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "flux"
     },
     {
       "matchManagers": ["helmv3"],
       "commitMessageTopic": "chart {{depName}}",
       "commitMessageExtra": "{{currentVersion}} → {{newVersion}}",
-      "prefix": "chore(helm)"
+      semanticCommitType: "chore",
+      semanticCommitScope: "helm"
     },
     {
       "matchPaths": ["clustertool/**"],
