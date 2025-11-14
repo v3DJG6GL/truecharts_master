@@ -14,7 +14,7 @@
       "addLabels": ["type/patch", "automerge"]
     },
     {
-      "matchUpdateTypes": ["digest", "pin", "pinDigest"],
+      "matchUpdateTypes": ["digest"],
       "addLabels": ["type/digest", "automerge"]
     },
     {
