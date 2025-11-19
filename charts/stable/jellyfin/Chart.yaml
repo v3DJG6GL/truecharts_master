@@ -35,10 +35,9 @@ maintainers:
     url: https://truecharts.org
 name: jellyfin
 sources:
-  - https://ghcr.io/jellyfin/jellyfin
   - https://github.com/jellyfin/jellyfin
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/jellyfin
   - https://hub.docker.com/r/alpine/socat
 type: application
-version: 21.12.8
+version: 22.0.0
 
