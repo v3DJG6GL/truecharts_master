@@ -599,7 +599,7 @@ ubuntuImage:
 
 scratchImage:
   repository: oci.trueforge.org/containerforge/scratch
-  tag: latest
+  tag: "1.0.0"
   pullPolicy: IfNotPresent
 
 kubectlImage:
