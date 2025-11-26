@@ -11,17 +11,17 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 0.24.348
+appVersion: 0.24.360
 dependencies:
   - name: common
-    version: 28.26.3
+    version: 28.27.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
   - name: mariadb
-    version: 17.9.7
+    version: 17.10.0
     repository: oci://oci.trueforge.org/truecharts
     condition: mariadb.enabled
     alias: ""
@@ -35,7 +35,7 @@ dependencies:
     tags: []
     import-values: []
   - name: mongodb
-    version: 16.12.7
+    version: 16.13.0
     repository: oci://oci.trueforge.org/truecharts
     condition: mongodb.enabled
     alias: ""
@@ -57,5 +57,5 @@ sources:
   - https://ghcr.io/linuxserver/jackett
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/app-template
 type: application
-version: 15.24.53
+version: 15.26.1
 
