@@ -1,7 +1,7 @@
 image:
   repository: docker.io/cglatot/pasta
   pullPolicy: IfNotPresent
-  tag: 1.6.7@sha256:92e4e9f73a3efc6d226b8f419f717bb573385912cf36e5d234de82ff0c7d46aa
+  tag: 2.2.2@sha256:7582e33264f6cb4affec8bfc1426aeba6fbdb7a2adbc065d7405524898347944
 service:
   main:
     ports:

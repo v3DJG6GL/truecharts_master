@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/emberstack/kubernetes-reflector
   pullPolicy: IfNotPresent
-  tag: 9.1.40@sha256:dd74de6b8d75fd92bfbb06d0c0093d85aad7c5e5852dc159e625815b54f7d60b
+  tag: 9.1.42@sha256:91dca077e9ca9cb1d36a246118cd54d945ab5b700018ea39bdf9ad3ed50c7a3a
 operator:
   register: true
 

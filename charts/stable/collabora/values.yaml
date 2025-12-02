@@ -1,7 +1,7 @@
 image:
   repository: docker.io/collabora/code
   pullPolicy: IfNotPresent
-  tag: 25.04.7.2.1@sha256:d1489cf3f7dd1ed6ddd2099fca50fd934ea2aa044085f91450f456fc83d2581f
+  tag: 25.04.7.3.1@sha256:9a6eb1042fa38f80127ae4b0e9c6f0ac549b267ecc8433bc7bb906eeee0ae176
 collabora:
   username: admin
   password: changeme

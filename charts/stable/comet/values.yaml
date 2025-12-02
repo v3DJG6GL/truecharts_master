@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/g0ldyy/comet
   pullPolicy: IfNotPresent
-  tag: latest@sha256:60de893c08118e0843ad58c6aba75392131d5ba8d808f5060493b9d67ab32a30
+  tag: latest@sha256:5e76ed1425670be2b4382638abc4bb342a9e4341fcc8ccde576678b773f99596
 
 service:
   main:

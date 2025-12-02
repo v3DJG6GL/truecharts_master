@@ -11,10 +11,10 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 2025.11.1
+appVersion: 2025.11.2
 dependencies:
   - name: common
-    version: 28.27.4
+    version: 28.29.2
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,7 +35,6 @@ name: esphome
 sources:
   - https://github.com/esphome/esphome
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/esphome
-  - https://hub.docker.com/r/esphome/esphome
 type: application
-version: 23.17.0
+version: 23.19.2
 

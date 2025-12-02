@@ -14,7 +14,7 @@ apiVersion: v2
 appVersion: 2025.11.3
 dependencies:
   - name: common
-    version: 28.27.4
+    version: 28.29.2
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -38,7 +38,6 @@ sources:
   - https://github.com/cdr/code-server
   - https://github.com/home-assistant/home-assistant
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/home-assistant
-  - https://hub.docker.com/r/homeassistant/home-assistant
 type: application
-version: 28.16.0
+version: 28.18.2
 

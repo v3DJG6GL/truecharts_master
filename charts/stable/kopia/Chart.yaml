@@ -11,10 +11,10 @@ annotations:
   truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 20251120.0.54628
+appVersion: 0.22.2
 dependencies:
   - name: common
-    version: 28.27.4
+    version: 28.29.2
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -35,8 +35,7 @@ name: kopia
 sources:
   - https://github.com/kopia/kopia
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/kopia
-  - https://hub.docker.com/r/kopia/kopia
   - https://kopia.io/docs/installation/#docker-images
 type: application
-version: 25.1.0
+version: 26.2.1
 
