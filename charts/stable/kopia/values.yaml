@@ -1,6 +1,6 @@
 image:
   repository: oci.trueforge.org/containerforge/kopia
-  tag: 0.22.2@sha256:37c35fb8fecac60f0fb64f8dcb0f953259437ce4ea6b4eab275553254014d98a
+  tag: 0.22.3@sha256:fe261e9e8fa31369d86663941edc616523e3bfe7f5b4064c5bdfb700fdb6c9ec
   pullPolicy: IfNotPresent
 service:
   main:

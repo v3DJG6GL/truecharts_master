@@ -1,6 +1,6 @@
 image:
   repository: docker.io/drpsychick/arkserver
-  tag: latest@sha256:5336febbd30a52de52e3f1113d87e9f9e422b311e3e866d9d17fa8cbfdeb7f57
+  tag: latest@sha256:fcdd1e25bab359f5e3b99b1cbdb87edb3daf9d910f619f0ffebf5dfc373f2400
 securityContext:
   pod:
     fsGroup: 1001
