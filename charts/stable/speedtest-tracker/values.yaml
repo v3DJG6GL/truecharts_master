@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/linuxserver/speedtest-tracker
   pullPolicy: IfNotPresent
-  tag: 1.12.3@sha256:b574379eb8aff5563e1874acfa3d5afa144e1831288cdecf3d720d410e86097b
+  tag: 1.13.3@sha256:ce42fcb3c4fdcceb22e8c91ad93b8293ea0fe0873221f07fce36aed65b6a1f51
 service:
   main:
     ports:

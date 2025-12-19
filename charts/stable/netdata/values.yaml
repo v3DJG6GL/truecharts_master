@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/netdata/netdata
-  tag: v2.8.2@sha256:b73e1bf43ab90b34f570d7ed70dcd95992cb1f738221e4d1dfdb7357148dc935
+  tag: v2.8.4@sha256:7da6bcb5809aee11f4830b9a000a6d6bafb43b05d7b6103dfd1a9438d61f5765
   pullPolicy: IfNotPresent
 # -- The service account the pods will use to interact with the Kubernetes API
 serviceAccount:

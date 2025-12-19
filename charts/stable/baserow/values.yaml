@@ -1,6 +1,6 @@
 image:
   repository: docker.io/baserow/baserow
-  tag: 2.0.3@sha256:2da1c2f9229cd9cb26822fbb34fa94882670a5ec4f715b796d367eeea0641807
+  tag: 2.0.5@sha256:ef6811e1d1f63486d79e91c356897b4503c43e2b5747510c8d4e6d6aaa5a143f
   pullPolicy: IfNotPresent
 securityContext:
   container:
