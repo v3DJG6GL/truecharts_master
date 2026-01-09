@@ -1,6 +1,6 @@
 image:
   repository: public.ecr.aws/zinclabs/openobserve
-  tag: v0.30.2@sha256:c151c453f17cce89931d4a96897a1716a90e33ddba08b60e9f2cc27573c3dd9e
+  tag: v0.40.1@sha256:8ad00a94b9859378f53b8314a2d090fdefffbd6ebff2d1c0e81a9fd392cc4184
   pullPolicy: IfNotPresent
 
 persistence:

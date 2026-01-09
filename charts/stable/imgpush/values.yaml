@@ -1,7 +1,7 @@
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/hauxir/imgpush
-  tag: latest@sha256:11874326c50bd35ec907a8dd55c8f0bade61458be11488be1b8bdbe5d49001cf
+  tag: latest@sha256:e9dc46b4a2b76a9b94bd5ffcc14fcdae0987a4fe5a696cce615e6b7275a4e102
 persistence:
   storagecache:
     enabled: true
