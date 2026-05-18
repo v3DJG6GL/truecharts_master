@@ -1,27 +1,28 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/nextcloud-fpm
   pullPolicy: IfNotPresent
-  tag: "32.0.1@sha256:e513d520dfd2b4490200757cdb76bf19a0c33fccea620b59fc7c024d1bcd8bcd"
+  tag: "33.0.3@sha256:37260d88be873bf5496911d482aee4d672deb47018d96bf62bb8eaf9ecfc2540"
 nginxImage:
   repository: oci.trueforge.org/containerforge/nginx
   pullPolicy: IfNotPresent
-  tag: "1.24.0@sha256:5d6667cece86ba7fdfde0ef729c3bab759da1f504f5431f2645656acb785a1d1"
+  tag: "1.28.3@sha256:4350f44a010dc49110c9664e6e216352b8ce80ad5d68d8f2bf3a00b378b2498f"
 imaginaryImage:
   repository: oci.trueforge.org/containerforge/nextcloud-imaginary
   pullPolicy: IfNotPresent
-  tag: "20230401@sha256:ac3c0e6e645440315622f42abe6125d3d393902e2bcf45df6d9d082c65551d3c"
+  tag: "20230401@sha256:7e5a2e03ee887c2b0c5c1d3bfde87225bf1a90f570184b6831953d32a78f1059"
 hpbImage:
   repository: oci.trueforge.org/containerforge/nextcloud-notify-push
   pullPolicy: IfNotPresent
-  tag: "1.2.1@sha256:107bb18dc9fbcd0e4ba58dd624975618d1d6df66d1feff126bdcd27fec446a1e"
+  tag: "1.3.2@sha256:a01bff5ce5a0325810160f3a8972a53f81a0a8ee07d94333301965fb2ec93cf0"
 clamavImage:
   repository: docker.io/clamav/clamav
   pullPolicy: IfNotPresent
-  tag: 1.5.1@sha256:0bb61211f5944315de757c653e667c8b7f9f6b7932070d0246dfdc64f48166b9
+  tag: 1.5.2@sha256:001eb4aed5df1f1a756935c41691c654ae1c22447e92259ec6f68d24fe46415d
 collaboraImage:
   repository: docker.io/collabora/code
   pullPolicy: IfNotPresent
-  tag: 25.04.8.1.1@sha256:3c58d0e9bae75e4647467d0c7d91cb66f261d3e814709aed590b5c334a04db26
+  tag: 25.04.9.4.1@sha256:fe49c08c27e102c1877ad4ef2ac1a7bd8ccd2dfaa6641d4533389c204a92bb88
 
 nextcloud:
   # Initial Credentials
@@ -213,16 +214,12 @@ workload:
           probes:
             readiness:
               enabled: true
-              path: /push/test/cookie
+              type: tcp
               port: 7867
-              httpHeaders:
-                Host: kube.internal.healthcheck
             liveness:
               enabled: true
-              path: /push/test/cookie
+              type: tcp
               port: 7867
-              httpHeaders:
-                Host: kube.internal.healthcheck
             startup:
               enabled: true
               type: tcp
@@ -549,4 +546,4 @@ ingress:
     integrations:
       traefik:
         chartMiddlewares:
-          - nextcloud-redirect
+          - name: nextcloud-redirect

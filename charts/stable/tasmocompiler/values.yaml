@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/benzino77/tasmocompiler
-  tag: latest@sha256:ecca50e502a365e6a931ce74500db66efd33da08420555b1d4391409958e7b58
+  tag: latest@sha256:f924035be9928c9b01fe14130a2f6e72b71c9d617269fd4fc82d5cac053962ff
   pullPolicy: IfNotPresent
 
 securityContext:

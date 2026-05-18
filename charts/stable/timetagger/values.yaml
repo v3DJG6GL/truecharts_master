@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/almarklein/timetagger
-  tag: v25.12.1-nonroot@sha256:f65e45b75fb5db04443552d859e7aafcdf9e9942a3c3c1bfcfd235e578e4fab6
+  tag: v26.1.3-nonroot@sha256:18a81afcb249142426fcff47bf9b54c343ca718a916f03d9722b84f8d7fafac6
 persistence:
   config:
     enabled: true

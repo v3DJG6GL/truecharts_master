@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
-  repository: ghcr.io/nicholaswilde/etherpad
+  repository: ghcr.io/ether/etherpad
   pullPolicy: IfNotPresent
-  tag: version-1.8.14@sha256:26bbd45110d5b4d70246fafe40d4c4a7047b7b4fde409763a125324fa93b2d73
+  tag: 3.1.0@sha256:7bae8bdb87559debbbb17a45eb72f8ae776af4088b1dba5620face5085f14b99
 securityContext:
   container:
     readOnlyRootFilesystem: false
@@ -43,9 +44,6 @@ persistence:
   data:
     enabled: true
     mountPath: "/opt/etherpad-lite/var"
-  app:
-    enabled: true
-    mountPath: "/opt/etherpad-lite/app"
 cnpg:
   main:
     enabled: true

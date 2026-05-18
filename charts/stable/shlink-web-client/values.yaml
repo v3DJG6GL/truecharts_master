@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/shlinkio/shlink-web-client
   pullPolicy: IfNotPresent
-  tag: 4.6.2@sha256:93d4c24ca33d856e8e8076232eed6f5e5b01c70d705fdeae63fc7ae4034ea07d
+  tag: 4.7.1@sha256:acc95a754a52d2a2aa4e74da6f722180e5b209902f0f0aad7cd9df33d4b4fc6f
 service:
   main:
     ports:

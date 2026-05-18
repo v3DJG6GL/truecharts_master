@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: public.ecr.aws/zinclabs/openobserve
-  tag: v0.40.1@sha256:8ad00a94b9859378f53b8314a2d090fdefffbd6ebff2d1c0e81a9fd392cc4184
+  tag: v0.80.3@sha256:e5307de001edf47f0cf1558a71a78e02b60d4d2e2ae62b518c47663201eb5347
   pullPolicy: IfNotPresent
 
 persistence:

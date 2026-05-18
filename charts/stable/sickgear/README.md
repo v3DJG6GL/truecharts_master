@@ -22,7 +22,7 @@ For more information on how to install TrueCharts Helm charts, checkout the [ins
 
 All our charts have dedicated documentation pages.
 The documentation for this chart can be found here:
-https://trueforge.org/truecharts/stable/sickgear
+https://truecharts.org/charts/stable/sickgear
 
 ## Configuration Options
 
@@ -38,7 +38,7 @@ For information about the common chart and all defaults included with it, please
 
 - See the [Website](https://truecharts.org)
 - Check our [Discord](https://discord.gg/tVsPTHWTtr)
-- Open a [issue](https://github.com/trueforge-org/truecharts/issues/new/choose)
+- Open an [issue](https://github.com/trueforge-org/truecharts/issues/new/choose)
 
 ---
 

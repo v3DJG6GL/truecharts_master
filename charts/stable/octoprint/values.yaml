@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/octoprint/octoprint
-  tag: 1.11.5@sha256:f3ceeaaa888d7a54721e67ce05489639ecdcdc09420ab5e3c2cbc676cd008db6
+  tag: 1.11.7@sha256:49bea4ebfd0cefa9289f058574e7eda6d2de201f1b74309e0c10019e5ec58f04
   pullPolicy: IfNotPresent
 service:
   main:

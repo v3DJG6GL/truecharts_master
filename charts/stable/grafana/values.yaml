@@ -1,11 +1,12 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/grafana/grafana
   pullPolicy: IfNotPresent
-  tag: 12.3.1@sha256:2175aaa91c96733d86d31cf270d5310b278654b03f5718c59de12a865380a31f
+  tag: 13.0.1@sha256:0f86bada30d65ef9d0183b90c1e2682ac92d53d95da8bed322b984ea78a4a73a
 
 sidecarImage:
   repository: ghcr.io/kiwigrid/k8s-sidecar
-  tag: 2.2.3@sha256:35a92d087d3063b7376a832b58e8f0818afd9e5e7489e7a83275d761a3c1cf0f
+  tag: 2.7.3@sha256:694950d736c8b532eba4006527ccbdac98fefc9f30b3346ba2de50b6cad91c94
 
 # Define extra dashboards to be provisioned
 # Supports 2 formats:
@@ -150,7 +151,7 @@ workload:
         download-dashboards:
           enabled: true
           type: init
-          imageSelector: alpineImage
+          imageSelector: ubuntuImage
           command: /download-dashboards.sh
       containers:
         main:
@@ -210,6 +211,13 @@ workload:
               enabled: false
             startup:
               enabled: false
+          resources:
+            requests:
+              cpu: 10m
+              memory: 128Mi
+            limits:
+              cpu: 200m
+              memory: 1536Mi
         datasources:
           enabled: true
           imageSelector: sidecarImage
@@ -240,6 +248,13 @@ workload:
               enabled: false
             startup:
               enabled: false
+          resources:
+            requests:
+              cpu: 10m
+              memory: 128Mi
+            limits:
+              cpu: 200m
+              memory: 1536Mi
         alerts:
           enabled: true
           imageSelector: sidecarImage
@@ -270,6 +285,13 @@ workload:
               enabled: false
             startup:
               enabled: false
+          resources:
+            requests:
+              cpu: 10m
+              memory: 128Mi
+            limits:
+              cpu: 200m
+              memory: 1536Mi
         plugins:
           enabled: true
           imageSelector: sidecarImage
@@ -300,6 +322,13 @@ workload:
               enabled: false
             startup:
               enabled: false
+          resources:
+            requests:
+              cpu: 10m
+              memory: 128Mi
+            limits:
+              cpu: 200m
+              memory: 1536Mi
         notifiers:
           enabled: true
           imageSelector: sidecarImage
@@ -330,6 +359,13 @@ workload:
               enabled: false
             startup:
               enabled: false
+          resources:
+            requests:
+              cpu: 10m
+              memory: 128Mi
+            limits:
+              cpu: 200m
+              memory: 1536Mi
 
 configmap:
   dashboard-provider:

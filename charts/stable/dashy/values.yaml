@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/lissy93/dashy
-  tag: latest@sha256:02cd2baaf9f7d08cdf10d3500b0a10ab074d1a756a2d2ef346e935921ffcc03c
+  tag: latest@sha256:6d21a893fc6dabe5ddcc385a76685ed24584865cd55be492e6199c82d0d5792f
   pullPolicy: IfNotPresent
 securityContext:
   container:

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/lmscommunity/lyrionmusicserver
   pullPolicy: IfNotPresent
-  tag: 9.1.0@sha256:e774ec44c02361a6dd916a68f81ebee98940a42c217ac3ecb87e5785e92b2baa
+  tag: 9.2.0@sha256:42dff5b18a14d7aa4d762ec9db929827a2c8daa37df31efad6b252cc7d7cbfe8
 service:
   main:
     ports:

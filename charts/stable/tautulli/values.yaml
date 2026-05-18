@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/tautulli/tautulli
   pullPolicy: IfNotPresent
-  tag: v2.16.0@sha256:7e6ede32f7923e01899db906aa6a96d978a4a8df8e2ef0dcf44c92b2d0206221
+  tag: v2.17.1@sha256:112abf6fa1ce352acb7fd96f14eaef3d5d8cda2906e59448bf8fb13b74ad10c1
 workload:
   main:
     podSpec:

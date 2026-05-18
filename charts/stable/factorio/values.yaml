@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/factoriotools/factorio
-  tag: stable@sha256:feeebedf6754969a43d7c08a48fc9508b2d91b34f5cbf1e120740b3fbdf3a75e
+  tag: stable@sha256:3cd46d3e7fb8434b74817da202480d8fb89a1ed29d5ab07f8e3ff6781450e936
 
 securityContext:
   container:

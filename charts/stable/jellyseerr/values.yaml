@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
-  repository: oci.trueforge.org/containerforge/jellyseer
-  tag: "2.7.3@sha256:49b7b95929a3c55cdf75d00e1506255823575960e0db85e5af8e42b4abf5eadc"
+  repository: oci.trueforge.org/containerforge/jellyseerr
+  tag: "2.7.3@sha256:8d266530eaee828b54552981a244614bd5d8ba3dca143a779538c78e3c435e6b"
   pullPolicy: IfNotPresent
 service:
   main:

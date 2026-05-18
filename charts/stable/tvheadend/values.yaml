@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/tvheadend
   pullPolicy: IfNotPresent
-  tag: latest@sha256:617c18a8e382a62cbd4ccc61aaaceba86a10968ce36e254a93c1a361a78de8dd
+  tag: latest@sha256:7c26fee0422833f4856135ff8fa792f8d07bc420abb3ad3ce90d3a26a4911202
 service:
   main:
     ports:

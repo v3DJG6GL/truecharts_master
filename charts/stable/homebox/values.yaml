@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/sysadminsmedia/homebox
   pullPolicy: IfNotPresent
-  tag: 0.22.3@sha256:b6c1362ab0450ca8fc1a347c13614a0b4f5674e1ecfa9a57a8c456612921842b
+  tag: 0.25.0@sha256:6506480a3dfadd2cc885fa97b32d11b0ee28ec58629fa34a76afdb4ac540c7fc
 homebox:
   allow_registration: true
   auto_increment_asset_id: true

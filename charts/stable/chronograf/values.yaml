@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: chronograf
-  tag: latest@sha256:42e7b310399e57126053f3ff8eb551290b942ebbd8fd08186af03cfce512bbff
+  tag: latest@sha256:2eebdc6f5b0e65845ff8e9e44b54f55fd137154848ff0924dd5d79f68def9721
 persistence:
   chronograf:
     enabled: true

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/rogerfar/rdtclient
   pullPolicy: IfNotPresent
-  tag: 2.0.119@sha256:ab9beded5f3770be207f8ffda1b3f23e1906b87b1af7362b66600f80d25ac201
+  tag: 2.0.133@sha256:ed50479491d75c0a431900de2240f3fea31c5476a811fb4d8bad510dc896fbb0
 aria2Image:
   repository: docker.io/p3terx/aria2-pro
   pullPolicy: IfNotPresent

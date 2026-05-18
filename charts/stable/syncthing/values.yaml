@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/syncthing/syncthing
   pullPolicy: IfNotPresent
-  tag: 2.0.13@sha256:6245d798ef695715eaa08f728ff3df91182570adfe77d0fe6d952b126e7601c1
+  tag: 2.1.0@sha256:7c60eb0ec887696c8684de88aea2dfe39a7391184b29d33c0aad778c99c7683e
 workload:
   main:
     podSpec:

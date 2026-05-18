@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/yacy/yacy_search_server
-  tag: latest@sha256:f28211c7a709f29c06008dd36625200861bd0d8fc88a485a23fdccc5444dd73a
+  tag: latest@sha256:798d4910211c7eebcf52e843448eadc981767f72039ce613ffed6e0f4a6ffc24
 persistence:
   appdata:
     enabled: true

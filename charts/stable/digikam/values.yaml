@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/digikam
   pullPolicy: IfNotPresent
-  tag: 8.8.0@sha256:01edb66f71c46ff64c1653198c113c56a364ce0986ff42087733ef5f98ab9565
+  tag: 9.0.0@sha256:c5556056904783abdbea83e24c06a931af5e621a41bb1394c450a721548a922a
 securityContext:
   container:
     readOnlyRootFilesystem: false

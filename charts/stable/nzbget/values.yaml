@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/nzbget
   pullPolicy: IfNotPresent
-  tag: "25.4.0@sha256:60a3413393e0d2565dbdb8eca3e84ebcc7f9065513baf7562b2159f723f3ff5a"
+  tag: "26.1.0@sha256:182a53d568b6c3b01242e5332d7ee6e4d37dd1f4854b0342714864f8da3c15c7"
 service:
   main:
     ports:

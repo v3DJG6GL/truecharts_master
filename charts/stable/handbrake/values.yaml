@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/jlesage/handbrake
-  tag: v25.12.4@sha256:e18ac010fe9808eaa8744c4ebc21bb6d451321953b3ac112dc85421213bb15c6
+  tag: v26.03.3@sha256:2b1eb1e34cf2edba2590c3ab768206a11cf8916fbe8a8a3391fe74d9eabcdce0
   pullPolicy: IfNotPresent
 service:
   main:

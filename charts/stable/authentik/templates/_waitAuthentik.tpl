@@ -3,7 +3,7 @@
 {{- $serverUrl := printf "https://%v:%v/-/health/ready/" $fullname .Values.service.main.ports.main.port }}
 enabled: true
 type: init
-imageSelector: alpineImage
+imageSelector: ubuntuImage
 command: /bin/sh
 args:
   - -c
@@ -17,4 +17,11 @@ args:
 
     echo "Authentik [{{ $serverUrl }}] is ready..."
     echo "Starting Outpost..."
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 10m
+    memory: 50Mi
 {{- end -}}

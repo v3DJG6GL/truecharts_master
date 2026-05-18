@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/openvscode-server
   pullPolicy: IfNotPresent
-  tag: 1.106.3@sha256:eac168f9fdbbc70e2ad92a8f536aa543d9b564be18cedc6a0f689b7a68325f22
+  tag: 1.109.5@sha256:454885e43de9ca6e10434b68ec25bc908582b651f4a36c65158ff4a94e213f32
 # secretEnv:
 #   CONNECTION_TOKEN: "somerandomstring"
 #   CONNECTION_SECRET: ""

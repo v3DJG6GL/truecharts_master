@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/ronnieroller/media-roller
-  tag: latest@sha256:3b3be2cddcb8e259b0ef2aece251ebe8adead2e195b39e6ecd9b5d1ec0576dea
+  tag: latest@sha256:877f9a59d389454db0563856d2486ce61ff5f132c5b4118473f093ba2cc30afe
 persistence:
   download:
     enabled: true

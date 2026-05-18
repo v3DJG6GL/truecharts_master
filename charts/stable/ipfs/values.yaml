@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/ipfs/kubo
   pullPolicy: IfNotPresent
-  tag: v0.39.0@sha256:41ad6d8c6ecaa3ba163d808a59679fa63cc44b50547179cef391d27a028d005e
+  tag: v0.41.0@sha256:0661819c2e0972f02d2c27759c217d7d739d461e52fc685e79113254af8f2f6b
 service:
   main:
     ports:

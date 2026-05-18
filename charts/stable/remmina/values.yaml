@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/remmina
   pullPolicy: IfNotPresent
-  tag: 1.4.40@sha256:2804ecfbfedc86bac7eca6c0f1d8f7675eddd8af8974d59b0f62c7dd4f965742
+  tag: 1.4.43@sha256:c6d315e590c160a1ed1dc31c5e168e62cd9fb4db085266b4dabf5e2fff360efb
 service:
   main:
     ports:

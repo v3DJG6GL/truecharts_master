@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/renovate
   pullPolicy: IfNotPresent
-  tag: 42.52.2@sha256:3eb7b969a6a50c375ce9f2e68c80b2e660b58a42e226298902d90364a63c9233
+  tag: 43.176.3@sha256:170322451053b2515a5f6e001df03f55d7bfd41bdce20f37e26ac83e153f2a74
 
 workload:
   main:

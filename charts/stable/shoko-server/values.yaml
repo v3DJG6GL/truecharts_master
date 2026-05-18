@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/shokoanime/server
   pullPolicy: IfNotPresent
-  tag: v5.1.0@sha256:dde0c5a8bddc226ae368827fd7df382602ad312a2337ebade8e5cc63fa0c4dac
+  tag: v5.3.3@sha256:b841f8249c9edfba102e4072e2b2a3eae4179e5dd553f29e11b9898a44f1e836
 service:
   main:
     ports:

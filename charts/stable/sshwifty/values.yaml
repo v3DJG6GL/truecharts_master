@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/niruix/sshwifty
   pullPolicy: IfNotPresent
-  tag: latest@sha256:013fc0621933194cd8f0df5ce58331c7e9e49e8da2f96a4637e9655c6c66bac9
+  tag: latest@sha256:cb414e46bf36f4f44eeacc96371bff0db498150558777657b16803986078e15e
 securityContext:
   container:
     readOnlyRootFilesystem: false

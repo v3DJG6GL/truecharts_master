@@ -37,6 +37,7 @@ secret:
           type: redis
 
         service:
+          publicurl: {{ .Values.vikunja.service.publicurl | quote }}
           interface: {{ printf ":%v" .Values.service.main.ports.main.port }}
           JWTSecret: {{ $jwtSecret }}
           timezone: {{ .Values.TZ | quote }}
@@ -145,19 +146,40 @@ secret:
             enabled: {{ .Values.vikunja.auth.local.enabled }}
           openid:
             enabled: {{ .Values.vikunja.auth.openid.enabled }}
-            {{- with .Values.vikunja.auth.openid.redirecturl }}
-            redirecturl: {{ . | quote }}
-            {{- end }}
             {{- with .Values.vikunja.auth.openid.providers }}
             providers:
-              {{- range . }}
-              - name: {{ .name | quote }}
-                authurl: {{ .authurl | quote }}
-                {{- with .logouturl }}
+              {{- range $key, $value := . }}
+              {{ $key }}:
+                name: {{ $value.name | quote }}
+                authurl: {{ $value.authurl | quote }}
+                {{- with $value.logouturl }}
                 logouturl: {{ . | quote }}
                 {{- end }}
-                clientid: {{ .clientid | quote }}
-                clientsecret: {{ .clientsecret | quote }}
+                clientid: {{ $value.clientid | quote }}
+                clientsecret: {{ $value.clientsecret | quote }}
+                {{- if hasKey $value "scope" }}
+                scope: {{ $value.scope | quote }}
+                {{- end }}
+                {{- if hasKey $value "usernamefallback" }}
+                usernamefallback: {{ $value.usernamefallback }}
+                {{- else }}
+                usernamefallback: false
+                {{- end }}
+                {{- if hasKey $value "emailfallback" }}
+                emailfallback: {{ $value.emailfallback }}
+                {{- else }}
+                emailfallback: false
+                {{- end }}
+                {{- if hasKey $value "forceuserinfo" }}
+                forceuserinfo: {{ $value.forceuserinfo }}
+                {{- else }}
+                forceuserinfo: false
+                {{- end }}
+                {{- if hasKey $value "requireavailability" }}
+                requireavailability: {{ $value.requireavailability }}
+                {{- else }}
+                requireavailability: false
+                {{- end }}
               {{- end }}
             {{- end }}
 

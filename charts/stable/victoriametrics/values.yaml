@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/victoriametrics/victoria-metrics
-  tag: v1.133.0@sha256:254069e96bf39deb06065e8600ca754fcf1287bfc04982e760d0e77f4a6fac4d
+  tag: v1.143.0@sha256:59b229f9b5ac32bb28c5ad94fc3019e34e82a3137f27f6ede6f73edeeefc2c64
   pullPolicy: IfNotPresent
 service:
   main:

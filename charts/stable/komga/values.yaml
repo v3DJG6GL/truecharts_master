@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/gotson/komga
-  tag: 1.23.6@sha256:09129eae6eff50337f039bd6e99d995126cb03226950c80e9864cbc05f10a661
+  tag: 1.24.4@sha256:dae630271561b642d47c9723803ec77900d1f0a803fbe6a42da69db5b21ebaeb
   pullPolicy: IfNotPresent
 workload:
   main:

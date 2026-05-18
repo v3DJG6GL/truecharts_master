@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/bbernhard/signal-cli-rest-api
   pullPolicy: IfNotPresent
-  tag: 0.96@sha256:04ee57f9819a90c89fbee46f74e080a032f5f05decf6e4b4a4e1f45d050ed9c8
+  tag: 0.99@sha256:96578363477d97cb1d8da303791b2ad686b374a255fce4d78c7c6f00ef56cba8
 
 service:
   main:

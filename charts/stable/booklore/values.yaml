@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/booklore-app/booklore
-  tag: v1.16.5@sha256:3b95a0c0085b6972f19075db695a118a9fe589561eec7816e4441465ae915ecd
+  tag: v2.3.0@sha256:10474742a0e704ec48540a3e5559cf27c16bcf0c021c494ba5bf3cc25b16b887
 service:
   main:
     ports:
@@ -31,6 +32,9 @@ persistence:
   data:
     enabled: true
     mountPath: /app/data
+  bookdrop:
+    enabled: true
+    mountPath: /bookdrop
   varrun:
     enabled: false
 mariadb:

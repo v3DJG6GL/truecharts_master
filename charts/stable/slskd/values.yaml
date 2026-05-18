@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/slskd/slskd
   pullPolicy: IfNotPresent
-  tag: 0.24.1@sha256:e3635858d9614a2fb811601afca706dbf97a6838b849905c27294cbce71be268
+  tag: 0.25.1@sha256:ab9ed50e028b524cefdb7c1dd8ebca368a076e18441ee8ac2326473eb850b4c3
 
 securityContext:
   container:

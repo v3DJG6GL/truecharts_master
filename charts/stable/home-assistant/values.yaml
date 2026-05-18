@@ -1,12 +1,13 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/home-assistant
   pullPolicy: IfNotPresent
-  tag: "2025.12.3@sha256:545304c104cd1b342461252126b5a2c00eb7267a623a1d016af7d09f883fe4d6"
+  tag: "2026.5.0@sha256:363409dacf3d435f760e266c17bf8bf76614c1bd21bcdfdf3a706be0580ad6a6"
 
 yqImage:
   pullPolicy: IfNotPresent
   repository: oci.trueforge.org/containerforge/go-yq
-  tag: "4.48.2@sha256:078f5f685ea6273e7030afa77396bf5247e0c2d6b361dc65f8e0b847375e080e"
+  tag: "4.53.2@sha256:297b088fc4e93a81e782eb3b641345c71d43dff3107753c0468c1ef9498c63f3"
 
 service:
   main:

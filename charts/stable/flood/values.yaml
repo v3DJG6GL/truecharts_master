@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/flood
   pullPolicy: IfNotPresent
-  tag: "4.11.0@sha256:4b3b1b2c9d4d31f425ba125ce7743004daec37f0f4535a37b64ee9e66f76d25e"
+  tag: "4.14.0@sha256:162a1eab034f14fff1ada3a3fb75ba33102192ad14d9ceedafbbc0b4cb7b5043"
 workload:
   main:
     podSpec:
@@ -19,3 +20,6 @@ persistence:
   data:
     enabled: true
     mountPath: /data
+  config:
+    enabled: true
+    mountPath: /config

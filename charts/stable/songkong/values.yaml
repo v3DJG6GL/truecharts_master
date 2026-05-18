@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/songkong/songkong
-  tag: latest@sha256:0f773aa736ada9834d0098b0dae5809f03f21f1d5c8e5dca61638f345d880eb7
+  tag: latest@sha256:4b521da9114ace8d4ecd3cf99ad84d1d85d692a10cab76c3252ff2fd1d900846
 persistence:
   music:
     enabled: true

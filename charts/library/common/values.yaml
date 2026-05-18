@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=./values.schema.json
 # -- Global values
 global:
   # -- Set additional global labels
@@ -529,8 +530,6 @@ notes:
       Version: {{ .Version }}
     {{- end }}
     {{- end }}
-
-
     {{- if .Values.chartContext.internalUrls }}
     ## Connecting Internally
 
@@ -584,7 +583,7 @@ tailscaleImage:
 
 codeserverImage:
   repository: oci.trueforge.org/containerforge/code-server
-  tag: "4.105.1@sha256:26b6455b3b212451d8f7a881a41f3a5e2e6ad9ff7d885589bdc40aa6e75e4e0c"
+  tag: "4.118.0@sha256:b02714ac2d0ee60df7dbcb2aa8b323779d97b71d2d40deeb412831a9530f7a9c"
   pullPolicy: IfNotPresent
 
 alpineImage:
@@ -594,62 +593,62 @@ alpineImage:
 
 ubuntuImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:f4f97014103ddd97cb710e71b9c6df79d4537dd0ce53d56c175fadd4c28139eb"
+  tag: "26.4@sha256:17312da6b52fe7ab6e3bdc8e4a1f99df63c2494b2bad4f4b634a9065d585898e"
   pullPolicy: IfNotPresent
 
 scratchImage:
   repository: oci.trueforge.org/containerforge/scratch
-  tag: "1.0.0@sha256:b6f7b7d519f32e7157d64c8df7b36b7dc8808283e6185a6cb6134fd326db9c13"
+  tag: "1.0.0@sha256:84182a2371dd7584ad752326b7150b4e928c640b7f70a249a3994b40f1db11fd"
   pullPolicy: IfNotPresent
 
 kubectlImage:
   repository: oci.trueforge.org/containerforge/kubectl
-  tag: "1.31.1@sha256:188024f6b8c4cdfa75f9ac76383a5ccb0b9a9bb517da77b85ca7519af1faec2b"
+  tag: "1.31.1@sha256:47fa8a164386b5320c18140236109baec862d7ed778215263c473965cecd18ac"
   pullPolicy: IfNotPresent
 
 wgetImage:
   repository: oci.trueforge.org/containerforge/ubuntu
-  tag: "24.04@sha256:f4f97014103ddd97cb710e71b9c6df79d4537dd0ce53d56c175fadd4c28139eb"
+  tag: "26.4@sha256:17312da6b52fe7ab6e3bdc8e4a1f99df63c2494b2bad4f4b634a9065d585898e"
   pullPolicy: IfNotPresent
 
 yqImage:
   pullPolicy: IfNotPresent
   repository: oci.trueforge.org/containerforge/go-yq
-  tag: "4.48.2@sha256:078f5f685ea6273e7030afa77396bf5247e0c2d6b361dc65f8e0b847375e080e"
+  tag: "4.53.2@sha256:297b088fc4e93a81e782eb3b641345c71d43dff3107753c0468c1ef9498c63f3"
 
 postgresClientImage:
   repository: oci.trueforge.org/containerforge/postgresql-client
-  tag: "1.1.0@sha256:09242b4574a58545f171542e50c51664b6dd535d8411f79d788766a4f4b67740"
+  tag: "9.6.24@sha256:c7ea20fbec42f93e8c45d05676673654dfba12665f63b9dc7020a00e01cff3cc"
   pullPolicy: IfNotPresent
 
 mariadbClientImage:
   repository: oci.trueforge.org/containerforge/mariadb-client
-  tag: "1.1.0@sha256:80dde85b802efb0373f41a5a29b862f5d0b7688f45a315f0e4bf39385d57b5c0"
+  tag: "12.2.2@sha256:a731429e1a17c24609eea50b0705ff5ad2e74fde98545d465f41bf2175a9c2e4"
   pullPolicy: IfNotPresent
 
 redisClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:bcd08c27e8320e1f72aca77be0a32a807545ee4a635a51d54a12311a0505399c"
+  tag: "1.1.0@sha256:10dfaf1f3bcc49a58eb1c298d3433efbe8e05e17b7e856699381efb2e4338362"
   pullPolicy: IfNotPresent
 
 valkeyClientImage:
   repository: oci.trueforge.org/containerforge/valkey-tools
-  tag: "1.1.0@sha256:bcd08c27e8320e1f72aca77be0a32a807545ee4a635a51d54a12311a0505399c"
+  tag: "1.1.0@sha256:10dfaf1f3bcc49a58eb1c298d3433efbe8e05e17b7e856699381efb2e4338362"
   pullPolicy: IfNotPresent
 
 mongodbClientImage:
   repository: oci.trueforge.org/containerforge/mongosh
-  tag: "1.2.0@sha256:a0c27dd437f3af3417915803e10e959d190ed9d058a98bb00a8ad12896f7c665"
+  tag: "2.8.3@sha256:f414e9cdfe773400f2a38577c2595f4005723d5e4156b71d5dd5e3c15772658a"
   pullPolicy: IfNotPresent
 
 postgres15Image:
   repository: ghcr.io/cloudnative-pg/postgresql
-  tag: "15.15@sha256:6c11bf2fa89b71ff3ed0390f863228a4a0b43fcb3e4aeca9a274e6c57c2e680a"
+  tag: "15.17@sha256:23d56b4e6232954ba7ae9eda453a9630946f382325e3bb63af3c2c32fce9a119"
   pullPolicy: IfNotPresent
 
 postgres16Image:
   repository: ghcr.io/cloudnative-pg/postgresql
-  tag: "16.11@sha256:63f938b0d63559b129da7a4b7aa870a5354e37521038d37643db2800652ae65e"
+  tag: "16.13@sha256:da09a5927dd7af1572591df6c2c1a192d441054ff73e6df823402fcbf08c5ff0"
   pullPolicy: IfNotPresent
 
 postgresPostgis15Image:
@@ -1051,6 +1050,7 @@ addons:
       enabled: true
       env:
         PORT: 12321
+        DEFAULT_WORKSPACE: /
       probes:
         liveness:
           enabled: true

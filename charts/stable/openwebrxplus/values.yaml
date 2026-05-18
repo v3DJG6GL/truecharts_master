@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/slechev/openwebrxplus-softmbe
   pullPolicy: IfNotPresent
-  tag: 1.2.103@sha256:cfedb8c26770ccf871496ed36c07f647f0782f0de62239c78777e1a34a2a1b78
+  tag: 1.2.114@sha256:0cd5b78520e2a2239ffa4f735f5955c0b827f134032b05198fa330ca82ea6f58
 workload:
   main:
     podSpec:

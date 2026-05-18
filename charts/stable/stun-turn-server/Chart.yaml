@@ -2,19 +2,17 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  max_scale_version: 24.04.1
-  min_scale_version: 24.04.0
-  truecharts.org/category: Network
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
+  trueforge.org/category: Network
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
 appVersion: latest
 dependencies:
   - name: common
-    version: 28.29.17
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -27,7 +25,7 @@ icon: https://truecharts.org/img/hotlink-ok/chart-icons/stun-turn-server.webp
 keywords:
   - stun-turn-server
   - Network
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
@@ -37,5 +35,5 @@ sources:
   - https://ghcr.io/ich777/stun-turn-server
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/stun-turn-server
 type: application
-version: 9.13.6
+version: 10.3.0
 

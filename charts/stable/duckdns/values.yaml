@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/duckdns
   pullPolicy: IfNotPresent
-  tag: latest@sha256:dd68d23ef64cfcd08eb9677b2714ab896302e4885abe4a194d5ff141baa7b8f9
+  tag: latest@sha256:26d7df2d60ac4dc1585f4ef9fee17b4fb4a515f84a5c9703c906dbb6b134c732
 securityContext:
   container:
     runAsNonRoot: false

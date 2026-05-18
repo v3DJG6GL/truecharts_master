@@ -1,0 +1,41 @@
+annotations:
+  artifacthub.io/links: |-
+    - name: support
+    url: https://discord.com/invite/tVsPTHWTtr
+  truecharts.org/train: stable
+  trueforge.org/category: observability
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
+apiVersion: v2
+appVersion: 2.6.2
+dependencies:
+  - name: common
+    version: 29.3.4
+    repository: oci://oci.trueforge.org/truecharts
+    condition: ""
+    alias: ""
+    tags: []
+    import-values: []
+deprecated: false
+description: AVM Exporter for Prometheus to monitor Fritz!Box devices
+home: https://truecharts.org/charts/stable/avm-exporter
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/avm-exporter.webp
+keywords:
+  - avm-exporter
+  - grafana
+  - prometheus
+kubeVersion: '>=1.33.0-0'
+maintainers:
+  - name: TrueCharts
+    email: info@truecharts.org
+    url: https://truecharts.org
+name: avm-exporter
+sources:
+  - https://github.com/pdreker/fritz_exporter
+  - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/avm-exporter
+  - https://hub.docker.com/r/pdreker/fritz_exporter
+type: application
+version: 2.3.0
+

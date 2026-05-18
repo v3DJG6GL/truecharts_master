@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/jgraph/drawio
-  tag: 29.2.9@sha256:4c064d20674e9ef24b4b7ca1a9b9fb6596d9cd8b2fb7bf042435f23ce4c361c2
+  tag: 30.0.2@sha256:63ba7ecd6722edc6fba7ee5285c37cf0e133205e5bf20d0a71646e76caddc1e7
   pullPolicy: IfNotPresent
 securityContext:
   container:

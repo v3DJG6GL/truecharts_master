@@ -19,7 +19,7 @@ jobs:
     name: "Generate readme files"
     steps:
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           token: ${{ secrets.OR_PAT }}
           fetch-depth: 1
@@ -27,7 +27,7 @@ jobs:
       - name: Setting repo parent dir as safe safe.directory
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - uses: actions/setup-go@4dc6199c7b1a012772edbd06daecab0f50c9053c # v6
+      - uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c # v6
         with:
           go-version: stable
           cache: true
@@ -35,22 +35,35 @@ jobs:
             **/go.mod
             **/go.sum
 
-      - name: Install ./clustertool
+      - name: Setup Forgetool
         shell: bash
-        run: |
-          VERSION="2.0.6"
-          FILENAME="clustertool_${VERSION}_linux_amd64.tar.gz"
-          URL="https://github.com/trueforge-org/truecharts/releases/download/v${VERSION}/${FILENAME}"
+        env:
+          GITHUB_TOKEN: ${{ inputs.token }}
+        run: |-
+          TAG=""
+          if RELEASES_JSON="$(curl -fsSL \
+            https://api.github.com/repos/trueforge-org/forgetool/releases)"; then
+            TAG="$(jq -r '[.[]
+              | select(.prerelease == true)
+              | .tag_name
+              | select(test("^(forgetool-)?v[0-9]+\\.[0-9]+\\.[0-9]+-ALPHA[0-9]+$"))
+              | {tag: ., alpha: (capture("ALPHA(?<n>[0-9]+)$").n | tonumber)}
+            ] | if length > 0 then max_by(.alpha).tag else empty end' <<< "${RELEASES_JSON}")"
+          fi
+          [ -n "${TAG}" ] && [ "${TAG}" != "null" ] || TAG="v4.0.0-ALPHA24"
+          VERSION="${TAG#v}"
+          VERSION="${VERSION#forgetool-v}"
+          case "$(uname -m)" in
+            x86_64) ARCH="amd64" ;;
+            aarch64) ARCH="arm64" ;;
+            *) echo "Unsupported uname architecture: $(uname -m). Supported uname values: x86_64, aarch64." && exit 1 ;;
+          esac
+          curl -fsSL -o "${RUNNER_TEMP}/forgetool.tar.gz" "https://github.com/trueforge-org/forgetool/releases/download/${TAG}/forgetool_${VERSION}_linux_${ARCH}.tar.gz" || { echo "Failed to download forgetool release ${TAG} for linux_${ARCH}"; exit 1; }
+          mkdir -p "${RUNNER_TEMP}/forgetool-bin"
+          tar -xzf "${RUNNER_TEMP}/forgetool.tar.gz" -C "${RUNNER_TEMP}/forgetool-bin" forgetool || { echo "Failed to extract forgetool binary from archive"; exit 1; }
+          chmod +x "${RUNNER_TEMP}/forgetool-bin/forgetool"
+          echo "${RUNNER_TEMP}/forgetool-bin" >> "${GITHUB_PATH}"
 
-          mkdir -p temp
-          cd temp
-          # Download the archive
-          curl -L -o "$FILENAME" "$URL"
-
-          # Extract the archive
-          tar -xzf "$FILENAME"
-
-          cd ..
 
       - name: Transcode icons to webp
         shell: bash
@@ -65,17 +78,19 @@ jobs:
               # Transcode to icon.webp
               if [[ "$EXT" != "webp" && ! -f "${DIR}/icon.webp" ]]; then
                   echo "converting file to icon.webp: $FILE"
-                  cwebp -resize 150 150  -m 6 -mt -q $QUALITY "$FILE" -o "${FILE/%.$EXT/.webp}" &>/dev/null || echo "transcode failed for icon.webp"
+                  cwebp -resize 150 150  -m 6 -mt -q $QUALITY "$FILE" -o "${DIR}/icon.webp" &>/dev/null || echo "transcode failed for icon.webp"
               fi
 
               # Transcode to icon-small.webp
-              if [[ "$EXT" != "webp" && ! -f "${DIR}/icon-small.webp" ]]; then
+              if [[ ! -f "${DIR}/icon-small.webp" ]]; then
                   echo "converting file to icon-small.webp: $FILE"
                   cwebp -resize 32 32 -m 6 -mt -q $QUALITY "$FILE" -o "${DIR}/icon-small.webp" &>/dev/null || echo "transcode failed for icon-small.webp"
               fi
 
-              # Remove the original file if it's not a .webp file after both transcodes
-              if [[ "$EXT" != "webp" ]]; then
+              # Only remove the original file if:
+              # 1. it's not already a webp
+              # 2. icon.webp exists in the same directory
+              if [[ "$EXT" != "webp" && -f "${DIR}/icon.webp" ]]; then
                   rm "$FILE"
               fi
           done
@@ -93,7 +108,7 @@ jobs:
       - name: Fix Chart.yaml
         shell: bash
         run: |
-           ./temp/clustertool charts genmeta
+           forgetool charts genmeta
 
       - name: Cleanup
         run: |

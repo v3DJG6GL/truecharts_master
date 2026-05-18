@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/haveagitgat/tdarr
   pullPolicy: IfNotPresent
-  tag: 2.58.02@sha256:20a5656c4af4854e1877046294f77113f949d27e35940a9a65f231423d063207
+  tag: 2.74.01@sha256:4dd21e8aa92f10601c35828566ddaadbb6d9d4335d004411ee69f1e02714d1c8
 service:
   main:
     ports:

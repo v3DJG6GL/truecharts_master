@@ -1,11 +1,12 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/jellyfin
   pullPolicy: IfNotPresent
-  tag: 10.11.4@sha256:10a27f8186aee2a978b28be8db5ac26dbaaddc48801bcae97d872135054891a1
+  tag: 10.11.8@sha256:280af6092c949d402025a69b92373ab15ce174a937565b0612a7f1ada086dedb
 broadcastProxyImage:
   repository: docker.io/alpine/socat
   pullPolicy: IfNotPresent
-  tag: 1.8.0.3@sha256:610f92c12b6fef778b9782c28740e5e7b08dd691c6ba390efc81a29c76d77c23
+  tag: 1.8.0.3@sha256:bfd2550379212e087dc18db2f4611f43477be4b575d660c8f18c5b9a1b2e2757
 service:
   main:
     ports:

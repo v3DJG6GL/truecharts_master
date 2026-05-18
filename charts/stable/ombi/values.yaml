@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/ombi
   pullPolicy: IfNotPresent
-  tag: 4.47.1@sha256:8bf174e9675736d1ef39ead16e3012282962f72a7272284069f4c2a343d23bed
+  tag: 4.53.5@sha256:2a1edf438ebfc4f1aae148c32914d7d7c1ba4c92923b32fed7a19d03933812ed
 service:
   main:
     ports:

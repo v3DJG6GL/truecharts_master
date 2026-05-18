@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/medusa
   pullPolicy: IfNotPresent
-  tag: 1.0.25@sha256:0bcb4451dda7c89b64717d7fbe9b9cce06ebb813a5238b872991457e42422d14
+  tag: 1.0.25@sha256:426aaafa8c08811f5dd8f62704ef5d895026afa53b6d23425bd9f05d609ba8b5
 service:
   main:
     ports:

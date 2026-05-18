@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: oci.trueforge.org/containerforge/adguardhome-sync
-  tag: "0.8.2@sha256:c11b40b2fcaee1d1cc062c12823532b5c67c3505eea28102890ca20fc97f818e"
+  tag: "0.9.0@sha256:c6a957d6012fc7dd7f1d345a9a3b37f89686b1967e48292c428cda3bc671af37"
 
 service:
   main:

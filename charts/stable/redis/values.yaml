@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/bitnamisecure/redis
   pullPolicy: IfNotPresent
-  tag: latest@sha256:a267ca7184a768d589e04a40cb0706181ab6e736ec79161a14f973230bec8783
+  tag: latest@sha256:1347d526ecec0c6537e99eac09e7c3405c21664f6044ff60e78b0898da37abd2
 
 workload:
   main:

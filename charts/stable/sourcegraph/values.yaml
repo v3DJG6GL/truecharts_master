@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/sourcegraph/server
-  tag: 6.11.2752@sha256:6c85c6dcb119ef5942d36c9588ab8809337b9ff7250e2b003edb29f1adca177c
+  tag: 6.12.5040@sha256:57a5802dfb3fbe368a4bf720ef3dc854286344267ce6e2bac80072e51810fee7
 persistence:
   applicationdatastoragepath:
     enabled: true

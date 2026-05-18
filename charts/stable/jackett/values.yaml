@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/jackett
   pullPolicy: IfNotPresent
-  tag: 0.24.445@sha256:bd5ec907934c49858e976ef8c8a7780d7bfdd8af320ca22a64014241aacad9a6
+  tag: 0.24.1846@sha256:07693037d78daa51edb40d8cfdda6e385473a647b3922d58da6ef5838ee022a2
 service:
   main:
     ports:

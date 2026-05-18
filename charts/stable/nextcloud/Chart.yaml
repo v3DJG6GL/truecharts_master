@@ -2,29 +2,27 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  max_scale_version: 24.04.1
-  min_scale_version: 24.04.0
-  truecharts.org/category: cloud
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
+  trueforge.org/category: cloud
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
-appVersion: 32.0.1
+appVersion: 33.0.3
 dependencies:
   - name: common
-    version: 28.29.17
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
-  - name: redis
-    version: 17.15.7
+  - name: valkey
+    version: 2.3.1
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
-    alias: ""
+    alias: redis
     tags: []
     import-values: []
 deprecated: false
@@ -37,7 +35,7 @@ keywords:
   - http
   - web
   - php
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
@@ -46,10 +44,14 @@ name: nextcloud
 sources:
   - https://github.com/nextcloud/docker
   - https://github.com/nextcloud/helm
+  - https://github.com/trueforge-org/containers/tree/main/apps/nextcloud-fpm
+  - https://github.com/trueforge-org/containers/tree/main/apps/nextcloud-imaginary
+  - https://github.com/trueforge-org/containers/tree/main/apps/nextcloud-notify-push
+  - https://github.com/trueforge-org/containers/tree/main/apps/nginx
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/nextcloud
   - https://github.com/trueforge/truecharts/tree/master/charts/stable/nextcloud
   - https://hub.docker.com/r/clamav/clamav
   - https://hub.docker.com/r/collabora/code
 type: application
-version: 40.4.14
+version: 44.7.2
 

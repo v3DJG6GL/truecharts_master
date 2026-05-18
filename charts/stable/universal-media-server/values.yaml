@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/universalmediaserver/ums
-  tag: latest@sha256:a31a6d36578d72f4d534ad3398e9889c42bcd45c10f9890dedaa859435d7be53
+  tag: latest@sha256:08a23dd89b415dc81fc13798b913da371f581a664d035b846b5f5d82ab98ce4c
 persistence:
   config:
     enabled: true

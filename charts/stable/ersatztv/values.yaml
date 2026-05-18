@@ -1,8 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/jasongdove/ersatztv
-  tag: v25.9.0@sha256:abeaae053c58ab3dce5e4771a1fe61f84b49d58360a110824698aa88402d055f
-imageSelector: image
+  tag: v26.3.0@sha256:7c402e5f348184359e0951b44d55fb6db3df671fa77fc91dcbd609034d28778b
 nvidiaImage:
   pullPolicy: Always
   repository: docker.io/jasongdove/ersatztv

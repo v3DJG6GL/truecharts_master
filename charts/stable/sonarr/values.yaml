@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/sonarr
   pullPolicy: IfNotPresent
-  tag: "4.0.16.2943@sha256:c6b0f8bc83878a3cc38e4bceff22274d43e92a735155c5a1133f4de1a5b869ae"
+  tag: "4.0.17.2967@sha256:71157af47baae3657b6c25acd7a26e94f821382e1fc1e58aa6c36661ecd5a319"
 exportarrImage:
   repository: ghcr.io/onedr0p/exportarr
   pullPolicy: IfNotPresent

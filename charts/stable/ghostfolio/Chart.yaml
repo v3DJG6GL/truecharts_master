@@ -2,29 +2,27 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  max_scale_version: 24.04.1
-  min_scale_version: 24.04.0
-  truecharts.org/category: finance
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
+  trueforge.org/category: finance
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
-appVersion: 2.228.0
+appVersion: 3.3.0
 dependencies:
   - name: common
-    version: 28.29.17
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
     tags: []
     import-values: []
-  - name: redis
-    version: 17.15.7
+  - name: valkey
+    version: 2.3.1
     repository: oci://oci.trueforge.org/truecharts
     condition: redis.enabled
-    alias: ""
+    alias: redis
     tags: []
     import-values: []
 deprecated: false
@@ -34,7 +32,7 @@ icon: https://truecharts.org/img/hotlink-ok/chart-icons/ghostfolio.webp
 keywords:
   - ghostfolio
   - finance
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
@@ -46,5 +44,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/ghostfolio
   - https://hub.docker.com/r/ghostfolio/ghostfolio
 type: application
-version: 8.68.0
+version: 12.7.0
 

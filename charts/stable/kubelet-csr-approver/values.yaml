@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/postfinance/kubelet-csr-approver
   pullPolicy: IfNotPresent
-  tag: v1.2.12@sha256:08d00647e168187c1a57296b50cd79db7af59e3ecdfd12eb9fc221762b721e99
+  tag: v1.2.14@sha256:c0f6aa1abdc225a32f9a29992fd97f711e78e2df21434f9ce7bc60981f96a5f8
 
 service:
   main:

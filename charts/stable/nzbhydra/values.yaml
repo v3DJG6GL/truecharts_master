@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/nzbhydra2
   pullPolicy: IfNotPresent
-  tag: 8.1.2@sha256:ad5dc050d53d4d02574cb6cb70adbe69b9fdd36a96204b57893121208afe0b87
+  tag: 8.8.1@sha256:5d99af41254cfcb08da3fa8fbe8c3103d0b14d639600068ce69090f08ac7ef6c
 service:
   main:
     ports:

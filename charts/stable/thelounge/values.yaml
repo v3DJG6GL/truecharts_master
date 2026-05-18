@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/thelounge/thelounge
   pullPolicy: IfNotPresent
-  tag: 4.4.3@sha256:c2aa0916203b298ffaf3a36c4eb60ef73c1006448d430e218d37840472e84e50
+  tag: 4.4.3@sha256:9a7ca90fb5e2c9d86910497f3fa40d4fff3372a63b5e2b4eca1674a1f9a7e958
 service:
   main:
     ports:

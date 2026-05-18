@@ -1,11 +1,12 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/emby
   pullPolicy: IfNotPresent
-  tag: 4.9.2.6@sha256:d422f4201616649a27927c4d3a54188a50dd1be14c41eb872148055f317747ef
+  tag: 4.10.0.11@sha256:a82b9ff41d046caa84e7fbc1035c901d9a4f8b0316bc2359f275fc28c820803c
 broadcastProxyImage:
   repository: docker.io/alpine/socat
   pullPolicy: IfNotPresent
-  tag: 1.8.0.3@sha256:610f92c12b6fef778b9782c28740e5e7b08dd691c6ba390efc81a29c76d77c23
+  tag: 1.8.0.3@sha256:bfd2550379212e087dc18db2f4611f43477be4b575d660c8f18c5b9a1b2e2757
 service:
   main:
     ports:

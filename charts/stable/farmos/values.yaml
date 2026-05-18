@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/farmos/farmos
-  tag: latest@sha256:bfd1ab23046639a125c6b830f9971e6468adb36bf2792e5c3b182f175f95dea4
+  tag: latest@sha256:a631191dbca24bd998818474f7397ebcb20a168f4a25c8f0489fcf25292a7fd5
 persistence:
   sitesdirectory:
     enabled: true

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/hotio/rflood
-  tag: latest@sha256:ddba1db237913ad24541f273cdfdb5738967f49f6543cb9893bf5c82e81d675e
+  tag: latest@sha256:64376774cf370c72a45f8e76c69ed91002654824ef8f97ca3303e0f99ddb457f
 persistence:
   config:
     enabled: true

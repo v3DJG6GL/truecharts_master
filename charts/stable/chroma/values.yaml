@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/chroma-core/chroma
   pullPolicy: IfNotPresent
-  tag: 1.4.0@sha256:e3f0e88393ac396a25188c430123d06cc65fe70373f4d6187ab95321c670dd72
+  tag: 1.5.9@sha256:1e0b73a187a28757c572acba508c46f48c9e8b0acaf5c20e6d95cdedce1acdf6
 
 securityContext:
   container:

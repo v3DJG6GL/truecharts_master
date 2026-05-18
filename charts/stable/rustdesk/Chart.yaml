@@ -2,17 +2,17 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  truecharts.org/category: security
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
+  trueforge.org/category: security
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
-appVersion: 1.1.14
+appVersion: 1.1.15
 dependencies:
   - name: common
-    version: 28.29.17
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -24,7 +24,7 @@ home: https://truecharts.org/charts/stable/rustdesk
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/rustdesk.webp
 keywords:
   - rustdesk
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
@@ -36,5 +36,5 @@ sources:
   - https://hub.docker.com/r/rustdesk/rustdesk-server-s6
   - https://rustdesk.com/de/
 type: application
-version: 2.13.5
+version: 3.3.0
 

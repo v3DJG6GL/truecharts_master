@@ -1,10 +1,11 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/portainer/portainer-ce
-  tag: 2.37.0@sha256:b48a491b8d2838c7ee98da6e00e32a04d0347a26466f48b20fb11e484e28f32a
+  tag: 2.41.1@sha256:4ac99847049fc6790562517a5cde2aeceb5ebbdf9c1ec5d3e20863399520685d
   pullPolicy: IfNotPresent
 beImage:
   repository: docker.io/portainer/portainer-ee
-  tag: 2.37.0@sha256:5b0d98a4fb428fa84e6bde3e695e309f765b7ba1801f218bcf4b3f461b53925e
+  tag: 2.41.1@sha256:704f5fa458fb7b60323729dd56507d68e10c094a1a7c54fa3cb446481f0ccbdb
   pullPolicy: IfNotPresent
 portainer:
   # Logo URL

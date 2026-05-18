@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/goofball222/unifi
-  tag: 10.0.162@sha256:0e5910012dffb489f7bb487466789f73a584cde1b677b038bf0d4974bcfb927b
+  tag: 10.3.58@sha256:6aa9490194b243217b7630a37a5d7f9efbb2d20776b63e666be44024315f0e9b
   pullPolicy: IfNotPresent
 service:
   main:

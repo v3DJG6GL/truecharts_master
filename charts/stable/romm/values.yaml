@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/rommapp/romm
   pullPolicy: IfNotPresent
-  tag: 4.5@sha256:79d2ab75ce6bdb8f0c7b1d8bb33a456566de5470d5d0e451fbc0919cc84679e8
+  tag: 4.8@sha256:2b7a1714b287f69b081ad2a63bb8c2fa673666a17b2f21322b580b0cd51cb266
 
 securityContext:
   container:

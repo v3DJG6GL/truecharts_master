@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/anirdev/slink
   pullPolicy: IfNotPresent
-  tag: v1.8.4@sha256:8692f0d5bc71ada75575822cb22d1f142782ed0b95323e9d38c5fa693db0abb3
+  tag: v1.11.3@sha256:0fd84616087a1cd6e1a195cf6ddbb59fad8fb174a9f9a98f49257fb534968e67
 securityContext:
   container:
     readOnlyRootFilesystem: false

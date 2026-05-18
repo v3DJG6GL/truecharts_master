@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/privoce/vocechat-server
   pullPolicy: IfNotPresent
-  tag: v0.5.8@sha256:c2f58344016b90813e82547ee3b3bcd5d29146aac762c1b6eab2748b5e8d9924
+  tag: v0.5.17@sha256:7df8b76b15e285c4e348ec44a855c0429bcea477928cfc857c5c42d22fc1d2d1
 
 service:
   main:

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/bitnamisecure/mariadb
   pullPolicy: IfNotPresent
-  tag: latest@sha256:840d8dd9c0b0f9eba357310eee1c22cb14826c3a0fdc721e6058e9d522836056
+  tag: latest@sha256:080f43016353de960fbdc733f7f149fae8316382af4c479a4a8adab369861909
 workload:
   main:
     podSpec:

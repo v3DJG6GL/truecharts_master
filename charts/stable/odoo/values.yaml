@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: public.ecr.aws/docker/library/odoo
   pullPolicy: IfNotPresent
-  tag: 19.0@sha256:34f57be597c45eebed1f0eeb71757a9d8eed6b7c512245632dfa2c9687968f2e
+  tag: 19.0@sha256:83223b09a6245871a0a7118c2ac4a60e871e8bcda7168086abd3d355c0402ff7
 securityContext:
   container:
     readOnlyRootFilesystem: false

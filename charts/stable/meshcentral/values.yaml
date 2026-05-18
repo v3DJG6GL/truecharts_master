@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/ylianst/meshcentral
   pullPolicy: IfNotPresent
-  tag: 1.1.55@sha256:0112e6c2c10c01c87f729d1bacad9d88e829ff840356c74a6607c67f63e5ffbf
+  tag: 1.1.59@sha256:7a619610e187fece8d3a15b3ac9448412d32baa1a9e63c1922b328eaeea17f10
 workload:
   main:
     podSpec:

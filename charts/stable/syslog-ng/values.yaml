@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/balabit/syslog-ng
   pullPolicy: IfNotPresent
-  tag: 4.10.2@sha256:4c080c73e493b227b0cd1d38d26f13ebd1f8a3bba4046ee52f9e92b963da2b4d
+  tag: 4.11.0@sha256:04cbac1d62435feac432ab04093ee4c737116bdd8a6cead96a40db377608415c
 service:
   main:
     ports:

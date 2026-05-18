@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/foxxmd/multi-scrobbler
-  tag: latest@sha256:96d3f49e5a426f5088655610f2e066aee0c717c4e5d1052aedffb888c9626c6b
+  tag: latest@sha256:aecbf754a18c2ddc5d9bcf6385316a63aeae685f4106e76c25ab9d2c26c0f550
   pullPolicy: IfNotPresent
 
 securityContext:

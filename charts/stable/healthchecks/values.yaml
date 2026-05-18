@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/healthchecks
-  tag: 3.13.20260104@sha256:d9c45c77e81e64204a87552596ede21efa7a36e09ff8c3631ea918396ddfbd48
+  tag: 4.2.20260511@sha256:5219c2b2708ed86802ec65d6dbcd0b16ef3448bc7017984c179cd793ce0d316d
   pullPolicy: IfNotPresent
 service:
   main:

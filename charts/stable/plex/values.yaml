@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/plex
   pullPolicy: IfNotPresent
-  tag: 1.42.2.10156@sha256:c432f1f2cc8c38cb4fd13c9599a68c91d79b43d2fb193ad61e281e8502e1d67e
+  tag: 1.43.1.10611@sha256:29351a0d8237b3427a761f34f7d1ca548081ddd1804ebbe7309209fe75ca51e2
 service:
   main:
     ports:

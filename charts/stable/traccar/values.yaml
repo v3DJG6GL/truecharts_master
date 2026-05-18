@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/traccar/traccar
-  tag: 6.11@sha256:8868db7e7027a4014672a315aacd029b04ba62b57fd3f0a48a8a497dbeb2a505
+  tag: 6.13@sha256:b715743f64c55ee63517a856c87d0808ecdcc3880904e39013ac2d60b2a00c6a
   pullPolicy: IfNotPresent
 service:
   main:

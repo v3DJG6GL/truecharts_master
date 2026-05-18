@@ -1,13 +1,14 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/kopia
-  tag: 0.22.3@sha256:09e3467a2fb0159fa7d5ebc3814d1c10e6069887aa86580c14fc40cd7f426fbf
+  tag: 0.23.0@sha256:2fed20f1e1f60fb137f1e70109c0f78ce11159cd75d32e3864a98c0d9bae5510
   pullPolicy: IfNotPresent
 service:
   main:
     ports:
       main:
         protocol: http
-        port: 10238
+        port: 51515
 
 kopia:
   user: "user"
@@ -37,13 +38,13 @@ workload:
 persistence:
   config:
     enabled: true
-    mountPath: "/app/config"
+    mountPath: "/config"
   cache:
     enabled: true
-    mountPath: "/app/cache"
+    mountPath: "/config/cache"
   logs:
     enabled: true
-    mountPath: "/app/logs"
+    mountPath: "/config/logs"
   rclone:
     enabled: true
-    mountPath: "/app/rclone"
+    mountPath: "/config/rclone"

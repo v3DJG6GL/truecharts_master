@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/guacamole/guacamole
   pullPolicy: IfNotPresent
@@ -183,7 +184,7 @@ workload:
             - -f
           securityContext:
             runAsUser: 1000
-            runAsGroup: 1000
+            runAsGroup: 1001
             readOnlyRootFilesystem: false
           probes:
             liveness:

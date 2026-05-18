@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/bizmodeller/mymediaforalexa
   pullPolicy: IfNotPresent
-  tag: 1.3.152.3@sha256:8ff9d9f34f8172d3f9e5c092cf16a840dc0c87ac73e5d43272abdad4eadd6dbc
+  tag: 1.3.156.0@sha256:0638ca161d15de60cab8b0f75b440e435c6ccc134f384990e006a7198aa33ca8
 service:
   main:
     ports:

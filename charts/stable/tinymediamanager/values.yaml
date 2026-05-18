@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/tinymediamanager/tinymediamanager
-  tag: 5.2.4@sha256:6613a5e3acd397aad28084449ae90965f203cda8095244bd90d509a3b11cb359
+  tag: 5.2.12@sha256:5cb043b0558e29429ae07a369f5211b9f4c13db5e10d0ee4324d55280542c656
   pullPolicy: IfNotPresent
 service:
   main:

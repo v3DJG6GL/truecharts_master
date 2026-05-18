@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/mstream
   pullPolicy: IfNotPresent
-  tag: 5.13.1@sha256:c5df2d8dad8313027e77b97f9b657969c97abf9f52863b9d2589572fca1c2de8
+  tag: 6.8.1@sha256:8788c77a98c8fba14fef306a54816ff45b392de9ac1484bbc2ad9b6ffd619c9e
 service:
   main:
     ports:

@@ -2,19 +2,17 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  max_scale_version: 24.04.1
-  min_scale_version: 24.04.0
-  truecharts.org/category: reporting
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
+  trueforge.org/category: reporting
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
-appVersion: 0.58.1
+appVersion: 0.61.1
 dependencies:
   - name: common
-    version: 28.29.17
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -26,7 +24,7 @@ home: https://truecharts.org/charts/stable/metabase
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/metabase.webp
 keywords:
   - metabase
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
@@ -37,5 +35,5 @@ sources:
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/metabase
   - https://hub.docker.com/r/metabase/metabase
 type: application
-version: 6.16.0
+version: 7.5.0
 

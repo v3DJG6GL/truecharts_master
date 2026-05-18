@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/iyuucn/iyuuplus
   pullPolicy: IfNotPresent
-  tag: latest@sha256:e3c8af96c0c9808df96d7acc0ea9cf0e16bd731366fb30047b30360026387c0f
+  tag: latest@sha256:6d69463592514316233482603d3a166588ecaab474427efeeea88327961f49ca
 service:
   main:
     ports:

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/wabayang/jelu
-  tag: latest@sha256:0fd44a02c016b4522eda81abe05f98679a926837240d2ea9bf12169c7e19e149
+  tag: latest@sha256:4f0895adc1f3b4d7475f75f293121ca6fb40a43b323665a25daaf202a3422820
 persistence:
   config:
     enabled: true

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/oscam
   pullPolicy: IfNotPresent
-  tag: 11918-ls1@sha256:479efd3c6fb19de78478c78236d2ebc95803bbccb3b2babfbf747e1b77e450d7
+  tag: 11960-ls15@sha256:3833f238f8a59d41794a497d9a8e1f54932c88955733082d3b92ada4f113565b
 service:
   main:
     ports:

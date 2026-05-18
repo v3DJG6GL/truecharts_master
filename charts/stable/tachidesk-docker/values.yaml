@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/suwayomi/tachidesk
-  tag: preview@sha256:88db25fda989365e8aaa74748be143860308553219ff7f71448bf1368b2d51de
+  tag: preview@sha256:79fa6e8d207a4c9331c79945e24dd6a5fefe305461dbd8126249eab37878c38c
 
 securityContext:
   container:

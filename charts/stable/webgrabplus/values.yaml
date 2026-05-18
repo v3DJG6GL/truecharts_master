@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/webgrabplus
   pullPolicy: IfNotPresent
-  tag: 5.5.0@sha256:45c0f8282709c18f4c244539769ac1bd13fed37b09a3e2a3de2230d55a2e1023
+  tag: 5.5.3@sha256:599416759794d45d6dfe6c4e8737f27e578bdda6824965604aa4dc60b70c897c
 service:
   main:
     enabled: false

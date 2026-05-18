@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/atuinsh/atuin
   pullPolicy: IfNotPresent
-  tag: v18.10.0@sha256:4a29feda6f352581ece849807445fe1f50f2074b4643b7bfe62b27e23705b068
+  tag: 18.16.1@sha256:9d4d79507b51be6d292b218f5cc791d79ca0a72f51ab48f786b091bd6eafb39f
 
 securityContext:
   container:
@@ -24,7 +25,6 @@ workload:
       containers:
         main:
           args:
-            - server
             - start
           env:
             ATUIN_HOST: 0.0.0.0

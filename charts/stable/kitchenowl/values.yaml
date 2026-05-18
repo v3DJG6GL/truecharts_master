@@ -1,11 +1,12 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/tombursch/kitchenowl-web
   pullPolicy: IfNotPresent
-  tag: latest@sha256:70c4af1d2167fa29c3809e666a8307c279f31f869ec264e7866bea8979c808d0
+  tag: latest@sha256:517f808eee661307608d30fac70732d1647bb8bdf783a452065570ac1f8c3c40
 backendImage:
   repository: docker.io/tombursch/kitchenowl
   pullPolicy: IfNotPresent
-  tag: latest@sha256:9d5e4402c2abc734e1536586caa103840a7ebe961fdce1570e31b956abeba70b
+  tag: latest@sha256:9f8d7e7849c68b3b516c92938b0489dc6173568f266c48e429556de0cb9d8d82
 
 service:
   main:

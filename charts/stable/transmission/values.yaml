@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/linuxserver/transmission
   pullPolicy: IfNotPresent
-  tag: 4.0.6@sha256:456204f6cd5e5a23a46bdae14c7f39238c3b8ec5bea750bba9d908e13c4e507b
+  tag: 4.1.1@sha256:62a88fbc210fc62d867eab9c67a0f5474db7257013ce598173a9efc1043e97b8
 service:
   main:
     ports:

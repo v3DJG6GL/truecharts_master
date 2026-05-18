@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/jlesage/makemkv
-  tag: v25.12.3@sha256:834a9f046224f854acdee6488992f91c72725ac3aba1a046881b499aee35c4b3
+  tag: v26.03.1@sha256:e2ab2c71f748cd504042706ec6323e22a34879eb9580a066dbcdf388f650feb0
   pullPolicy: IfNotPresent
 makemkv:
   # General Settings

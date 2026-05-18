@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/speedtest-tracker
   pullPolicy: IfNotPresent
-  tag: 1.13.4@sha256:ff645c6421782d14538aa81846ea0f0417064c43c0078ffb047dbce808185bfa
+  tag: 1.14.1@sha256:a2f4b798445ad702df27b028f190cd7247627d1d3c6cb473f684e2738658021f
 service:
   main:
     ports:

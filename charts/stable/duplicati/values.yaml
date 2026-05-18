@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/duplicati
-  tag: 2.2.0@sha256:dce757828c1a472be3e46ebb810a474c03755ae19e01539340ded2f9c7709439
+  tag: 2.3.0@sha256:16ff282c18d3e5819a6c3338ced6ee9300316eb6a5cab7433e603d9f65ee9337
   pullPolicy: IfNotPresent
 service:
   main:

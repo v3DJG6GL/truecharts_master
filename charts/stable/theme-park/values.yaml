@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/theme-park
   pullPolicy: IfNotPresent
-  tag: 1.21.3@sha256:5adab626b1a5cc4e8e8d03d596bda61c0ef12aed6e2487012150cc9efdfdb5bf
+  tag: 1.22.0@sha256:5d183557413c12d13d157b100efe213e6f17a7e87bebbaec3da51516bc086591
 service:
   main:
     ports:

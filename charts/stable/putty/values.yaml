@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/jlesage/putty
-  tag: v25.12.3@sha256:8db9af5b8966413479e063c75f8178eeb54bf67fd2be868404c8b504a76a2038
+  tag: v26.03.1@sha256:fcfe27a2baed830b9561f1c52067ab9310405e3e33999683b00fb8ec5054d236
   pullPolicy: IfNotPresent
 service:
   main:

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/znc
   pullPolicy: IfNotPresent
-  tag: 1.10.1@sha256:b85ad9504dae0338e775ebfd46d443f113f2849ded2b8b7022df6d0ef488b53f
+  tag: 1.10.2@sha256:b0d54f5ce3f88e2f42af4a95784ebbea94ddb037bef59cba7cde05b196c4bbe6
 service:
   main:
     ports:

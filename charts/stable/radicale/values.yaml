@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/tomsquest/docker-radicale
-  tag: 3.5.10.0@sha256:e9d49beb7e459a915a9e828daf22db54d00c5835b4f57ff29419776870fd8687
+  tag: 3.7.3.0@sha256:265195d889c122bb64367a84ce36ff5dc3ab88b6f5a26321af7d41be6a5da2d0
 
 securityContext:
   container:

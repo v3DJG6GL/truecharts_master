@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/jlesage/mkvcleaver
-  tag: v25.12.3@sha256:ab319908119a7c619ececcdb5440a8834acb9cf0a368bead9b4dcd5037616dd6
+  tag: v26.03.1@sha256:597664e538413c3670a03c6379f9067bad97737bb9e1fcb695e73a1a4da931db
   pullPolicy: IfNotPresent
 mkvcleaver:
   KEEP_APP_RUNNING: false

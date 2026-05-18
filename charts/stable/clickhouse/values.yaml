@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/clickhouse/clickhouse-server
   pullPolicy: IfNotPresent
-  tag: 25.12.2.54@sha256:fdb65cbeb3600a3ffed8aa72afae66522423d55b275dd7ae3ec8459141cf3821
+  tag: 26.4.2.10@sha256:6d8f358747b59f7db044749eaf951e828e75cc16f9c487f855b114272c44b82c
 
 workload:
   main:

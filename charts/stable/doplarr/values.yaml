@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: oci.trueforge.org/containerforge/doplarr
-  tag: "3.6.3@sha256:9c51b1222b9a5930df291a1dba26018b0ac32d051517623f96905f426230575e"
+  tag: "3.7.0@sha256:e7eb0b67ac23c8a7dc45a2b1ac3a63ecd6c504588319bd5dd01c05646f229501"
   pullPolicy: IfNotPresent
 service:
   main:

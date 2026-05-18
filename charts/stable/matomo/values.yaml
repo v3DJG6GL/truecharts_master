@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: public.ecr.aws/bitnami/matomo
-  tag: 5.6.2@sha256:a3a8a22ff8dca1d2373e1b125fbd2c19805707ad80ce49ed16f7ce0ffcf0cff0
+  tag: 5.10.0@sha256:cb69b03bdb074eb67df9c22797d0cb1c836091d21cff6c444a7d267b2147458a
   pullPolicy: IfNotPresent
 securityContext:
   container:

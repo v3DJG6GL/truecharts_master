@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/coderaiser/cloudcmd
-  tag: 19.1.0@sha256:748d0e7d18170a1a3a000a23137cad63c5c2e15ef8a4db142ed6c2a7ac024814
+  tag: 19.17.0@sha256:af87e0b09b61b1bdb88c2649cb77087af9d377f59077189a3374fd57668e1845
 persistence:
   appdata:
     enabled: true

@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/jlesage/czkawka
   pullPolicy: IfNotPresent
-  tag: v25.12.6@sha256:ae7eff54d479b06e93a9ee773598ecf177802ba07fd92ace02e65f0a3bb7a4f5
+  tag: v26.03.1@sha256:bb1012c8a162f79918eac88c7fd5e579b52e1464eeadc6fb2509363d2e569a10
 securityContext:
   container:
     readOnlyRootFilesystem: false

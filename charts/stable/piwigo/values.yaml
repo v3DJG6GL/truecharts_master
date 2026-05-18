@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/linuxserver/piwigo
   pullPolicy: IfNotPresent
-  tag: 16.2.0@sha256:1229710b17644300702975890dd8a94ff787815352e9b7a1c18966086e31c2b2
+  tag: 16.4.0@sha256:4e0f0adf149910ca9c0b8e691c0e830cd9e9dd27273b16c676974c8a0539c5ff
 securityContext:
   container:
     runAsNonRoot: false

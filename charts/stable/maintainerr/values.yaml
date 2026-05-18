@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
-  repository: docker.io/jorenn92/maintainerr
+  repository: docker.io/maintainerr/maintainerr
   pullPolicy: IfNotPresent
-  tag: 2.26.0@sha256:91b0770ad7f21d1bdc6dcf27955f2264e34498345ba1e790141ed703301c6918
+  tag: 3.11.2@sha256:bd71ca33bc1133437adf4bc4f4c074e1fc2905c5a6c640aa237cfe14d0f249db
 
 securityContext:
   container:

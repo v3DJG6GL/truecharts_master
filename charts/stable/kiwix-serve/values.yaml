@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: ghcr.io/kiwix/kiwix-serve
-  tag: 3.8.1@sha256:a105ef4c6791741224f0f6883fc391c4fe8bd25307be286e631d0a52e8777ef7
+  tag: 3.8.2@sha256:3448ca74298f226c4b44f72e52cf25c7b4e7f7542d7a44b4a3f105562e94859b
 service:
   main:
     ports:

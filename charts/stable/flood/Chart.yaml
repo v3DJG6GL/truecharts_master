@@ -2,19 +2,17 @@ annotations:
   artifacthub.io/links: |-
     - name: support
     url: https://discord.com/invite/tVsPTHWTtr
-  max_scale_version: 24.04.1
-  min_scale_version: 24.04.0
-  truecharts.org/category: media
-  truecharts.org/max_helm_version: "3.17"
-  truecharts.org/max_kubernetes_version: 1.32.0
-  truecharts.org/min_helm_version: "3.14"
-  truecharts.org/min_kubernetes_version: 1.24.0
   truecharts.org/train: stable
+  trueforge.org/category: media
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
 apiVersion: v2
-appVersion: 4.11.0
+appVersion: 4.14.0
 dependencies:
   - name: common
-    version: 28.29.17
+    version: 29.3.4
     repository: oci://oci.trueforge.org/truecharts
     condition: ""
     alias: ""
@@ -29,7 +27,7 @@ keywords:
   - rtorrent
   - qbittorrent
   - transmission
-kubeVersion: '>=1.24.0-0'
+kubeVersion: '>=1.33.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
@@ -37,7 +35,8 @@ maintainers:
 name: flood
 sources:
   - https://github.com/jesec/flood
+  - https://github.com/trueforge-org/containers/tree/main/apps/flood
   - https://github.com/trueforge-org/truecharts/tree/master/charts/stable/flood
 type: application
-version: 16.16.6
+version: 17.4.0
 

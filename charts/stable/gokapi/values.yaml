@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/f0rc3/gokapi
-  tag: v2.1.0@sha256:d1d71a843a4d31fa949191948560e0b7a1502f584a614046a43186cc19e1522d
+  tag: v2.2.4@sha256:43cd93b9e1f02d760923f67f6e74e1c4d4a9cccb9b08fa42ad60770333f231eb
 persistence:
   config:
     enabled: true

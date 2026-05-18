@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: ghcr.io/g0ldyy/comet
   pullPolicy: IfNotPresent
-  tag: latest@sha256:a81965ab9b0cc25d236b05e168f2dfb5cc5daa371b25e00f5048c9e6a3520e2c
+  tag: latest@sha256:7ab050b1ab0f9a6e01981f14ba13f8bf1fd508914d2aa0bb83909b0ba2e55138
 
 service:
   main:

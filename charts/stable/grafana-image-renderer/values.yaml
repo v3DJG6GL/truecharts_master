@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: docker.io/grafana/grafana-image-renderer
-  tag: latest@sha256:273c059618110d1d6d32154cefd235e3a8d29fda2425d03d054f37e4b740349b
+  tag: latest@sha256:340c91e98ccd65001a3da4d0192fcf0ed13e95609a51a0d62c35a61b6ff28dff
 persistence: {}
 
 securityContext:

@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/jlesage/mkvtoolnix
-  tag: v25.12.3@sha256:ec0ba5c05338be8a7c907dbdf914eb4c85a08c75e35b4889216f71212255a25d
+  tag: v26.04.1@sha256:c4d238f9b38d7ea23ae1df75ef7fee26c751cf3d0ab7631bb9fcb66296f66164
   pullPolicy: IfNotPresent
 service:
   main:

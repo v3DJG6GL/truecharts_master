@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   pullPolicy: IfNotPresent
   repository: lscr.io/linuxserver/cops
-  tag: 3.8.2@sha256:7ce18f136cace1ca03550170073100f2bfdddd565be3be4b58195557402f74aa
+  tag: 4.3.3@sha256:f45c328aec047f6268edf1f0ad5549bae93434bd28cf02fbe418e9c0034f6edb
 securityContext:
   container:
     readOnlyRootFilesystem: false

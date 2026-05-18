@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/revenz/fileflows
-  tag: 25.12@sha256:afcec26d7bbdf6792e685a2692b63b155cdf3cc79a37a054f58d70ad7db3606d
+  tag: 26.05@sha256:0e43858cccfdfc7a181e1b11a81f066ed075b5341f08116051b2d5dd21bc1ca3
   pullPolicy: IfNotPresent
 securityContext:
   container:

@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/vikunja/vikunja
-  tag: 0.24.6@sha256:ed1f3ed467fecec0b57e9de7bc6607f8bbcbb23ffced6a81f5dfefc794cdbe3b
+  tag: 2.3.0@sha256:f6b80393c1998cd5cd0dc38d24762c59ab4c10000a6f1032ef5b554e262cab93
   pullPolicy: IfNotPresent
 workload:
   main:
@@ -22,6 +23,7 @@ workload:
               path: /health
 vikunja:
   service:
+    publicurl: http://localhost/
     jwtttl: 259200
     jwtttllong: 2592000
     motd: Welcome to your new Vikunja instance
@@ -101,13 +103,27 @@ vikunja:
       enabled: true
     openid:
       enabled: false
-      redirecturl: ""
-      providers: []
-      # - name: ""
-      #   authurl: ""
-      #   logouturl: ""
-      #   clientid: ""
-      #   clientsecret: ""
+      providers: {}
+      # Example configuration for multiple OpenID providers:
+      # providers:
+      #   provider-id1:
+      #     name: "Provider 1"
+      #     authurl: "https://auth.example.com"  # Used for OIDC Discovery, usually the issuer
+      #     logouturl: ""  # Optional
+      #     clientid: "vikunja-client-id"
+      #     clientsecret: "vikunja-client-secret"
+      #     scope: "openid profile email"
+      #     usernamefallback: false
+      #     emailfallback: false
+      #     forceuserinfo: false  # Optional: Set to true to always use UserInfo endpoint instead of ID token claims
+      #     requireavailability: false
+      #   provider-id2:
+      #     name: "Provider 2"
+      #     authurl: "https://auth2.example.com"
+      #     clientid: "vikunja-client-id-2"
+      #     clientsecret: "vikunja-client-secret-2"
+      #     scope: "openid profile email"
+      #     forceuserinfo: false
   migration:
     todoist:
       enable: false

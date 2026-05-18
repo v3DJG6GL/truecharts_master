@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/jlesage/jdownloader-2
   pullPolicy: IfNotPresent
-  tag: v25.12.3@sha256:3c3c55746a802012cee302c20e8f61ed7e9d067f29efe0cd4da736b0645a1c7e
+  tag: v26.03.1@sha256:3d6cb102bd9bacff12ab1ca5136a38cb8f93d6595a7ccf5bce60aac4df138ebd
 service:
   main:
     ports:

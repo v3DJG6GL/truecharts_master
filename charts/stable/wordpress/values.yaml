@@ -1,7 +1,8 @@
+# yaml-language-server: $schema=./values.schema.json
 image:
   repository: docker.io/bitnamisecure/wordpress
   pullPolicy: IfNotPresent
-  tag: latest@sha256:d5e0f8bead6110c9034a9dd0f9658dcba98162854f8acc6839c3a703884b9176
+  tag: latest@sha256:c0f8716067f97683d70108ccfd9aac67c8ee62c7137c3664dd477577a253f85d
 securityContext:
   container:
     readOnlyRootFilesystem: false
